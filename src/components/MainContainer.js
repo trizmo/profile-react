@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AboutMe from './AboutMe';
 import Portfolio from './Portfolio'
 import Skills from './Skillz'
+import Contact from './Contact'
 
 export default class MainContainer extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class MainContainer extends Component {
             <Route exact path="/" component={AboutMe} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/skills" component={Skills} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </Router>
 

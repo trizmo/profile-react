@@ -67,6 +67,6 @@ const styles = {
     backgroundColor: "#fff",
     borderRadius: 5,
     boxShadow: "0px 0px 10px lightgrey",
-
+    margin: 10
   }
 }
