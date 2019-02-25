@@ -66,9 +66,7 @@ const styles = {
     fontSize: "2em",
     backgroundColor: "#fff",
     borderRadius: 5
-
-  },
-  mainText:hover {
     boxShadow: "1px 1px 10px grey",
+
   }
 }
