@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 import ContactForm from './ContactForm'
 import ContactInfo from './ContactInfo'
@@ -7,24 +7,26 @@ import ContactInfo from './ContactInfo'
 export default class Contact extends Component {
   render() {
     return (
-      <div>
+      <Container>
 
         <div style={styles.mainText} className="text-center">
           Let's see what we can build together!
         </div>
-        
-        <Row>
-          <Col>
-            <ContactForm />
-          </Col>
-          <Col>
-            <ContactInfo />
-          </Col>
-        </Row>
+
+        <Container>
+          <Row>
+            <Col>
+              <ContactForm />
+            </Col>
+            <Col>
+              <ContactInfo />
+            </Col>
+          </Row>
+        </Container>
 
 
 
-      </div>
+      </Container>
     )
   }
 }

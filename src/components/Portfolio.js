@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Container } from 'reactstrap';
 
 import WorkCard from './WorkCard';
-import projectsData from '../data/projects'
+import projectsData from '../data/projects';
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -12,33 +13,28 @@ export default class Portfolio extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
 
       <div style={styles.mainText} className="text-center">
         Building projects for businesses, with friends, or just for fun.
       </div>
 
-      <div style={{
+      <Container style={{
         display: "flex",
         flex: 1,
         flexDirection: "row",
         flexWrap: "wrap"
-      }}
+        }}
       
-      className={"text-center"}
+        className={"text-center"}
       
-      >
+        >
 
 
         {this.state.projects.map(project => {
           return (
             
-            <div
-            style={{
-              display: "flex",
-              flex: 1,
-              margin: 10,
-            }}>
+            <div style={{ display: "flex", flex: 1, margin: 10, }}>
 
               <WorkCard
                 key={project.id}
@@ -53,8 +49,8 @@ export default class Portfolio extends Component {
         })}
 
 
-      </div>
-  </div>
+      </Container>
+  </Container>
     )
   }
 }

@@ -1,27 +1,28 @@
 import React from 'react';
-import { Form, FormGroup, Label, Input, Button, Row, Col } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Button, Container } from 'reactstrap';
 
 export default function ContactForm() {
   return (
-    <Form>
-      <FormGroup>
-        <Label for="contactEmail">Email</Label>
-        <Input type="email" name="email" id="contactEmail" placeholder="Enter Your Email..."/>
-      </FormGroup>
-      
-      <FormGroup>
-        <Label for="contactName">Name</Label>
-        <Input type="text" name="name" id="contactName" placeholder="Enter Your Name..."/>
-      </FormGroup>
-      
-      <FormGroup>
-        <Label for="contactMessage">Message</Label>
-        <Input type="textarea" name="message" id="contactMessage" />
-      </FormGroup>
+    <Container>
+      <Form>
+        <FormGroup>
+          <Label for="contactEmail">Email</Label>
+          <Input type="email" name="email" id="contactEmail" placeholder="Enter Your Email..." />
+        </FormGroup>
 
-      <Button>Submit</Button>
-    </Form>
-  
+        <FormGroup>
+          <Label for="contactName">Name</Label>
+          <Input type="text" name="name" id="contactName" placeholder="Enter Your Name..." />
+        </FormGroup>
+
+        <FormGroup>
+          <Label for="contactMessage">Message</Label>
+          <Input type="textarea" name="message" id="contactMessage" />
+        </FormGroup>
+
+        <Button>Submit</Button>
+      </Form>
+    </Container>
   )
 }
 
