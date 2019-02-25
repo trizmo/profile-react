@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap'
+import { Card, CardBody, CardTitle, CardText, CardImg, Button } from 'reactstrap'
 
 
 export default function WorkCard(props) {
@@ -7,10 +7,13 @@ export default function WorkCard(props) {
 
     <Card>
       <CardImg top width="100%" src={props.img} className="text-center" />
-      <CardBody>
+      <CardBody style={{
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between"}}>
         <CardTitle>{props.name}</CardTitle>
         <CardText>{props.description}</CardText>
-        <CardText>{props.repoLink}</CardText>
+        <Button href={props.repoLink} target="_blank">Repo</Button>
       </CardBody>
     </Card>
 
