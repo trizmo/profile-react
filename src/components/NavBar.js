@@ -24,7 +24,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" dark expand="sm" className="mb-5">
+        <Navbar color="dark" dark expand="sm" className="mb-5" style={styles.navi}>
           <Container>
             <NavbarBrand href="/" style={styles.mainHead}> Tristan Perera | Fullstack Developer </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
@@ -32,8 +32,13 @@ export default class NavBar extends Component {
 
               <Nav navbar className="ml-auto">
                 <NavItem>
-                  <NavLink href="/portfolio/"> &lt; &frasl; portfolio &gt; </NavLink>
-                  <NavLink href="/skills/"> &lt; &frasl; skills and abilities &gt; </NavLink>
+                  <NavLink href="/portfolio/"> &lt; &frasl; portfolio &gt;</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/skills/"> &lt; &frasl; skills and abilities &gt;</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/contact/"> &lt; &frasl; contact &gt; </NavLink>
                 </NavItem>
               </Nav>
 
@@ -46,6 +51,9 @@ export default class NavBar extends Component {
 }
 
 const styles = {
+  navi: {
+    padding: 0
+  },
   mainHead: {
     fontFamily: "HomeMade Apple",
     textDecoration: "underline",
