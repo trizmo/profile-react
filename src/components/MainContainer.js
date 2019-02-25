@@ -11,7 +11,7 @@ import Contact from './Contact'
 export default class MainContainer extends Component {
   render() {
     return (
-      <Container>
+      <Container style={styles.mainContainer}>
         <Router>
           <Switch>
             <Route exact path="/" component={AboutMe} />
@@ -23,5 +23,11 @@ export default class MainContainer extends Component {
 
       </Container>
     )
+  }
+}
+
+const styles ={
+  mainContainer: {
+    marginBottom: 200
   }
 }

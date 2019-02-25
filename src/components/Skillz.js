@@ -27,7 +27,8 @@ export default class Skillz extends Component {
         display: "flex",
         flex: 1,
         flexDirection: "row",
-        flexWrap: "wrap"
+        flexWrap: "wrap",
+        justifyContent: "space-between"
       }} 
       
       className={"text-center"} 
@@ -39,9 +40,11 @@ export default class Skillz extends Component {
           
           <div
           style={{
-            display: "flex",
+            // display: "flex",
+            // flexDirection: "row",
+            // flexWrap: "wrap"
             flex: 1,
-            margin: 10,
+            margin: 5,
           }}
           >
 
