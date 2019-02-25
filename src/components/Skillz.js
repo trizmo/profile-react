@@ -24,17 +24,7 @@ export default class Skillz extends Component {
     </div>
 
 
-        <Container style={{
-          display: "flex",
-          flex: 1,
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-between"
-        }}
-
-          className={"text-center"}
-
-        >
+        <Container style={styles.mainContainer} className={"text-center"}>
 
           {this.state.skills.map(skill => {
             return (
@@ -77,6 +67,13 @@ const styles = {
     borderRadius: 5,
     boxShadow: "0px 0px 10px lightgrey",
     margin: 10
+  },
+  mainContainer: {
+    display: "flex",
+    flex: 1,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    fontSize: "1.5em"
   }
 }
 

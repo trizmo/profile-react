@@ -19,16 +19,7 @@ export default class Portfolio extends Component {
         Building projects for businesses, with friends, or just for fun.
       </div>
 
-      <Container style={{
-        display: "flex",
-        flex: 1,
-        flexDirection: "row",
-        flexWrap: "wrap"
-        }}
-      
-        className={"text-center"}
-      
-        >
+      <Container style={styles.mainContainer} className={"text-center"}>
 
 
         {this.state.projects.map(project => {
@@ -64,5 +55,12 @@ const styles = {
     borderRadius: 5,
     boxShadow: "0px 0px 10px lightgrey",
     margin: 10
+  },
+  mainContainer: {
+    display: "flex",
+    flex: 1,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    fontSize: "1.5em"
   }
 }
