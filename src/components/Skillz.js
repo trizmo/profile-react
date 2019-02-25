@@ -14,6 +14,15 @@ export default class Skillz extends Component {
 
   render() {
     return (
+      <div>
+
+
+
+      <div style={styles.mainText} className="text-center">
+      Learning different tools to complete different jobs.
+    </div>
+
+
       <div style={{
         display: "flex",
         flex: 1,
@@ -50,7 +59,19 @@ export default class Skillz extends Component {
 
 
       </div>
+      </div>
     )
+  }
+}
+
+const styles = {
+  mainText: {
+    color: "#04030F",
+    padding: 35,
+    fontSize: "2em",
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    boxShadow: "0px 0px 10px lightgrey",
   }
 }
 

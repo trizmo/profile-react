@@ -65,8 +65,8 @@ const styles = {
     padding: 35,
     fontSize: "2em",
     backgroundColor: "#fff",
-    borderRadius: 5
-    boxShadow: "1px 1px 10px grey",
+    borderRadius: 5,
+    boxShadow: "0px 0px 10px lightgrey",
 
   }
 }
