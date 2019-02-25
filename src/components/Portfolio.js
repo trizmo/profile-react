@@ -12,27 +12,33 @@ export default class Portfolio extends Component {
   }
   render() {
     return (
+      <div>
+
+      <div style={styles.mainText} className="text-center">
+        Building projects for businesses, with friends, or just for fun.
+      </div>
+
       <div style={{
         display: "flex",
         flex: 1,
         flexDirection: "row",
         flexWrap: "wrap"
       }}
-
-        className={"text-center"}
-
+      
+      className={"text-center"}
+      
       >
+
 
         {this.state.projects.map(project => {
           return (
-
+            
             <div
-              style={{
-                display: "flex",
-                flex: 1,
-                margin: 10,
-              }}
-            >
+            style={{
+              display: "flex",
+              flex: 1,
+              margin: 10,
+            }}>
 
               <WorkCard
                 key={project.id}
@@ -40,7 +46,7 @@ export default class Portfolio extends Component {
                 repoLink={project.repoLink}
                 description={project.description}
                 img={project.img}
-              />
+                />
 
             </div>
           )
@@ -48,7 +54,21 @@ export default class Portfolio extends Component {
 
 
       </div>
+  </div>
     )
   }
 }
 
+const styles = {
+  mainText: {
+    color: "#04030F",
+    padding: 35,
+    fontSize: "2em",
+    backgroundColor: "#fff",
+    borderRadius: 5
+
+  },
+  mainText:hover {
+    boxShadow: "1px 1px 10px grey",
+  }
+}

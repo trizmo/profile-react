@@ -37,17 +37,17 @@ const styles = {
   mainSection: {
     color: "#04030F",
     padding: 5,
-    fontSize: 22
+    fontSize: "1em"
   },
   standard: {
     color: "#04030F",
     padding: 5,
-    fontSize: 18,
+    fontSize: "2em",
     margin: 15
   },
   jumbo:{
     color: "#04030F",
     padding: 55,
-    fontSize: 18
+    fontSize: "2em"
   }
 }

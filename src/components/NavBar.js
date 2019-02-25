@@ -10,9 +10,6 @@ import {
   Container
 } from 'reactstrap';
 
-
-
-
 export default class NavBar extends Component {
   state = {
     isOpen: false
@@ -29,7 +26,7 @@ export default class NavBar extends Component {
       <div>
         <Navbar color="dark" dark expand="sm" className="mb-5">
           <Container>
-            <NavbarBrand href="/"> Tristan Perera | Fullstack Developer </NavbarBrand>
+            <NavbarBrand href="/" style={styles.mainHead}> Tristan Perera | Fullstack Developer </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
 
@@ -40,11 +37,19 @@ export default class NavBar extends Component {
                 </NavItem>
               </Nav>
 
-
             </Collapse>
           </Container>
         </Navbar>
       </div>
     )
+  }
+}
+
+const styles = {
+  mainHead: {
+    fontFamily: "HomeMade Apple",
+    textDecoration: "underline",
+    color: "#999",
+    fontSize: 16
   }
 }
