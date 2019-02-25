@@ -1,34 +1,34 @@
 import React from 'react';
-import { Container, Row, Col, NavLink, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <Container fluid className="text-center text-md-left" style={styles.mainFooter}>
-      <Container style={styles.containerStyle}>
+      <Container style={styles.containerStyle} className="text-center">
 
-      <Row>
-        <Col>
-          <Button block>GitHub</Button>
-        </Col>
-        <Col>
-          <Button block>LinkedIn</Button>
-        </Col>
-        <Col>
-          <Button block>Twitter</Button>
-        </Col>
-        <Col>
-          <Button block>InstaGram</Button>
-        </Col>
-      </Row>
+        <Row>
+          <Col>
+          <FaGithub style={{fontSize: "2em"}} /> Github
+          </Col>
+          <Col>
+          <FaLinkedin style={{fontSize: "2em"}} /> LinkedIn
+          </Col>
+          <Col>
+          <FaFacebook style={{fontSize: "2em"}} /> Facebook
+          </Col>
+          <Col>
+          <FaTwitter style={{fontSize: "2em"}} /> Twitter
+          </Col>
+        </Row>
 
-      <Row>
-        <Col>
-          <p>tristan.e.perera@gmail.com</p>
-        </Col>
-        <Col>
-          <p>562.555.5555</p>
-        </Col>
-      </Row>
+        <Row style={{marginTop: 10}}>
+            <p>tristan.e.perera@gmail.com</p>
+        </Row>
+
+        <Row>
+            <p>562.555.5555</p>
+        </Row>
 
       </Container>
     </Container>
@@ -48,7 +48,10 @@ const styles = {
   },
   containerStyle: {
     padding: 50,
-    
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between"
+
   }
 
 }
