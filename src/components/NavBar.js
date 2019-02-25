@@ -11,6 +11,8 @@ import {
 } from 'reactstrap';
 
 
+
+
 export default class NavBar extends Component {
   state = {
     isOpen: false
@@ -33,7 +35,8 @@ export default class NavBar extends Component {
 
               <Nav navbar className="m-auto">
                 <NavItem>
-                  <NavLink href="#"> &lt; &frasl; portfolio &gt; </NavLink>
+                  <NavLink href="/portfolio/"> &lt; &frasl; portfolio &gt; </NavLink>
+                  <NavLink href="/skills/"> &lt; &frasl; skills and abilities &gt; </NavLink>
                 </NavItem>
               </Nav>
 
