@@ -22,13 +22,13 @@ const Footer = () => {
           </Col>
         </Row>
 
-        <Row style={{marginTop: 10}}>
+        {/* <Row style={{marginTop: 10}}>
             <p>tristan.e.perera@gmail.com</p>
         </Row>
 
         <Row>
             <p>562.555.5555</p>
-        </Row>
+        </Row> */}
 
       </Container>
     </Container>
@@ -43,8 +43,7 @@ const styles = {
     backgroundColor: "#393D3F",
     color: "lightgrey",
     boxShadow: "0px 1px black",
-    marginTop: 0,
-    height: 150
+    marginTop: 100,
   },
   containerStyle: {
     padding: 50,
