@@ -37,6 +37,7 @@ export default class Skillz extends Component {
           >
 
             <SkillCard 
+            key={skill.id}
             name={skill.name}
             level={skill.level}
             text={skill.text}

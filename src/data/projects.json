@@ -4,20 +4,23 @@
     "name": "GingerRed Naturals",
     "repoLink": "https://github.com/MrStevenNg/GingerRed-Naturals",
     "img": "https://trizmo.github.io/main-profile/assets/img/gingerrednat-fullweb.png",
-    "description": "GingerRed Naturals is for a Mom in Montana that had a need for a showcase of her home-made natural products for her community."
+    "description": "GingerRed Naturals is for a Mom in Montana that had a need for a showcase of her home-made natural products for her community.",
+    "type": "work"
   },
   {
     "id": 2,
     "name": "VeriGate",
     "repoLink": "https://github.com/quipsquaff/project2",
     "img": "https://trizmo.github.io/main-profile/assets/img/verigate.png",
-    "description": "A device created with security in mind. Verigate turns your gate operator into an IoT device, allowing you to control your gate operator by allowing who gets in."
+    "description": "A device created with security in mind. Verigate turns your gate operator into an IoT device, allowing you to control your gate operator by allowing who gets in.",
+    "type": "school"
   },
   {
     "id": 3,
     "name": "BoyAlgo",
     "repoLink": "https://github.com/trizmo/boy-algo",
     "img": "https://trizmo.github.io/main-profile/assets/img/boyalgo.png",
-    "description": "This stock alert bot scans a list of your stocks for its current price and compares it to the target prices you have set. @BoyAlgo will notify you with a tweet with the details of the alert."
+    "description": "This stock alert bot scans a list of your stocks for its current price and compares it to the target prices you have set. @BoyAlgo will notify you with a tweet with the details of the alert.",
+    "type": "personal"
   }
 ]

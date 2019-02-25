@@ -1,85 +1,59 @@
 import React from 'react';
-import { Container, Row, Col, NavLink } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    // <Footer color="blue" className="font-small pt-4 mt-4">
-    <Container fluid className="text-center text-md-left" style={footerStyles}>
-      <Row>
-        <Col md="6">
-          <h5 className="title text-center">Full Stack React and React Native Developer</h5>
+    <Container fluid className="text-center text-md-left" style={styles.mainFooter}>
+      <Container style={styles.containerStyle} className="text-center">
 
-          <Row>
-            Portfolio
-          </Row>
-          <Row>
-            Email | tristan.e.perera@gmail.com
-          </Row>
-          <Row>
-            Email | tristan.e.perera@gmail.com
-          </Row>
+        <Row>
+          <Col>
+          <FaGithub style={{fontSize: "2em"}} /> Github
+          </Col>
+          <Col>
+          <FaLinkedin style={{fontSize: "2em"}} /> LinkedIn
+          </Col>
+          <Col>
+          <FaFacebook style={{fontSize: "2em"}} /> Facebook
+          </Col>
+          <Col>
+          <FaTwitter style={{fontSize: "2em"}} /> Twitter
+          </Col>
+        </Row>
 
+        <Row style={{marginTop: 10}}>
+            <p>tristan.e.perera@gmail.com</p>
+        </Row>
 
-        </Col>
-        <Col md="6">
+        <Row>
+            <p>562.555.5555</p>
+        </Row>
 
-          <Row>
-            <h5 className="title text-center m-auto">Socal Media</h5>
-          </Row>
-
-
-            <Row>
-
-            <Col>
-              <NavLink>LinkedIn</NavLink>
-            </Col>
-            <Col>
-              <NavLink>Twitter</NavLink>
-            </Col>
-            <Col>
-              <NavLink>FaceBook</NavLink>
-            </Col>
-            <Col>
-              <NavLink>InstaGramk</NavLink>
-            </Col>
-      
-            </Row>
-
-            <Row>
-          
-          <Row>
-            562.555.5555
-          </Row>
-
-          <Row>
-            tristan.e.perera@gmail.com
-          </Row>
-          
-            </Row>
-  
-
-          {/* <Row>
-            <h5 className="title text-center m-auto">Contact</h5>
-          </Row> */}
-
-         
-
-
-        </Col>
-      </Row>
+      </Container>
     </Container>
-    // </Footer>
   );
 }
 
-const footerStyles = {
-  position: "fixed",
-  width: "100%",
-  bottom: 0,
-  backgroundColor: "#393D3F",
-  color: "lightgrey",
-  boxShadow: "0px 1px black",
-  marginTop: 1800,
+const styles = {
+  mainFooter: {
+    position: "fixed",
+    width: "100%",
+    bottom: 0,
+    backgroundColor: "#393D3F",
+    color: "lightgrey",
+    boxShadow: "0px 1px black",
+    marginTop: 0,
+    height: 150
+  },
+  containerStyle: {
+    padding: 50,
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between"
+
+  }
+
 }
 
 export default Footer;
