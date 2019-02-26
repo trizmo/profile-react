@@ -20,7 +20,7 @@ export default class Skillz extends Component {
 
 
         <div style={styles.mainText} className="text-center">
-          Learning different tools to complete different jobs.
+          Getting the tools needed to complete the job.
     </div>
 
 
@@ -34,8 +34,9 @@ export default class Skillz extends Component {
                   // display: "flex",
                   // flexDirection: "row",
                   // flexWrap: "wrap"
-                  flex: 1,
+                  flex: "1 0 21%",
                   margin: 5,
+                  // alignItems: "stretch",
                 }}
               >
 
@@ -66,14 +67,14 @@ const styles = {
     backgroundColor: "#fff",
     borderRadius: 5,
     boxShadow: "0px 0px 10px lightgrey",
-    margin: 10
+    margin: 10,
   },
   mainContainer: {
     display: "flex",
     flex: 1,
     flexDirection: "row",
     flexWrap: "wrap",
-    fontSize: "1.5em"
+    fontSize: "1.5em",
   }
 }
 
