@@ -30,7 +30,7 @@ export default class AboutMe extends Component {
                 Tristan Perera
               </div>
               <div style={styles.mainTitle}>
-                FullStack Developer
+                Software Engineer
               </div>
               <div>
                 Self-driven web developer with FullStack skills in current industry standards. Passionate about what these technological tools can do to help people achieve their goals, I'm more than eager to problem solve and help innovate. Always looking to better myself, learn new things and to be a valuable asset to any team by bringing my positive energy, and my exceptional problem solving skills
