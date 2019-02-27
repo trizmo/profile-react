@@ -38,10 +38,10 @@ export default class Skillz extends Component {
                   margin: 5,
                   // alignItems: "stretch",
                 }}
+                key={skill.id}
               >
 
                 <SkillCard
-                  key={skill.id}
                   name={skill.name}
                   level={skill.level}
                   text={skill.text}

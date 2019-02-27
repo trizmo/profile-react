@@ -34,12 +34,12 @@ export default class Resume extends Component {
           {this.state.experience.map(exp => (
             (exp.type === "work") ?
               (
-                <div style={resumeStyles.exxp}>
+                <div style={resumeStyles.exxp} key={exp.id}>
                   <span style={resumeStyles.name}>{exp.name} | </span>
                   <span style={resumeStyles.projectPeriod}>{exp.projectPeriod}</span>
                   <p style={resumeStyles.description}>{exp.description}</p>
                   {exp.accomplishments.map(accomp => (
-                    <ul>
+                    <ul key={accomp}>
                       <li>{accomp}</li>
                     </ul>
                   ))}
@@ -58,11 +58,11 @@ export default class Resume extends Component {
 
           {this.state.experience.map(exp => (
             (exp.type === "project") ? (
-              <div style={resumeStyles.exxp}>
+              <div style={resumeStyles.exxp} key={exp.id}>
                 <p style={resumeStyles.name}>{exp.name}</p>
                 <p style={resumeStyles.description}>{exp.description}</p>
                 {exp.accomplishments.map(accomp => (
-                  <ul>
+                  <ul key={accomp}>
                     <li>{accomp}</li>
                   </ul>
                 ))}
@@ -88,7 +88,7 @@ export default class Resume extends Component {
           ))}
         </Container> */}
 
-        <Button outline size="lg" color="primary" href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
+        <Button outline size="lg" color="primary" style={{left: 0}} href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
           Download My Resume
         </Button>
       </Container>

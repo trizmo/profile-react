@@ -1,24 +1,36 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { Container, Row, Col, Button } from 'reactstrap';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <Container fluid className="text-center text-md-left" style={styles.mainFooter}>
+    <Container fluid className="text-center " style={styles.mainFooter}>
       <Container style={styles.containerStyle} className="text-center">
 
         <Row>
           <Col>
-          <FaGithub style={{fontSize: "2em"}} /> Github
+          <Button style={{ textDecoration: "none"}}>
+            <a href="https://github.com/trizmo/" target="_blank" style={{ color: "white", textDecoration: "none" }}>
+              <FaGithub style={{fontSize: "2em"}} /> 
+              <span>&nbsp;Github</span>
+            </a>
+            </Button>
           </Col>
           <Col>
-          <FaLinkedin style={{fontSize: "2em"}} /> LinkedIn
+          <Button style={{ textDecoration: "none"}}>
+            <a href="https://linkedin.com/in/tristan-perera/" target="_blank" style={{ color: "white", textDecoration: "none" }}>
+              <FaLinkedin style={{fontSize: "2em"}} /> 
+              <span>&nbsp;LinkedIn</span>
+            </a>
+            </Button>
           </Col>
           <Col>
-          <FaFacebook style={{fontSize: "2em"}} /> Facebook
-          </Col>
-          <Col>
-          <FaTwitter style={{fontSize: "2em"}} /> Twitter
+          <Button style={{ textDecoration: "none"}}>
+            <a href="https://twitter.com/lastskycaptain" target="_blank" style={{ color: "white", textDecoration: "none" }}>
+              <FaTwitter style={{ fontSize: "2em" }} />
+              <span>&nbsp;Twitter</span>
+            </a>
+          </Button>
           </Col>
         </Row>
 
@@ -42,11 +54,11 @@ const styles = {
     bottom: 0,
     backgroundColor: "#393D3F",
     color: "lightgrey",
-    boxShadow: "0px 1px black",
+    boxShadow: "0px 0px 10px lightgrey",
     marginTop: 100,
   },
   containerStyle: {
-    padding: 50,
+    padding: 35,
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between"

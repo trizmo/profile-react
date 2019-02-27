@@ -2,8 +2,10 @@
   "name": "profile-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://trizmo.github.io/profile-react/",
   "dependencies": {
     "bootstrap": "^4.3.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-icons": "^3.4.0",
@@ -15,6 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
