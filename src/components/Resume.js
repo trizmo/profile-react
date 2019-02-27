@@ -44,6 +44,8 @@ export default class Resume extends Component {
                     </ul>
                   ))}
                   <a href={exp.repoLink}><p>Github Repo</p></a>
+                  {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (console.log("")) }
+                  
                 </div>
               ) : (console.log(""))
           ))}
@@ -65,6 +67,7 @@ export default class Resume extends Component {
                   </ul>
                 ))}
                 <a href={exp.repoLink}><p>Github Repo</p></a>
+                {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (console.log("")) }
 
               </div>) : (console.log(""))
 
