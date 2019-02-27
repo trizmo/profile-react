@@ -5,7 +5,12 @@
     "repoLink": "https://github.com/MrStevenNg/GingerRed-Naturals",
     "img": "https://trizmo.github.io/main-profile/assets/img/gingerrednat-fullweb.png",
     "description": "GingerRed Naturals is for a Mom in Montana that had a need for a showcase of her home-made natural products for her community.",
-    "type": "work"
+    "type": "work",
+    "projectPeriod": "OCTOBER 2018 - NOVEMBER 2018",
+    "accomplishments": [
+      "Assisted in research and development of new technologies."
+    ],
+    "techUsed": ["WordPress", "Apache", "MAMP", "php"]
   },
   {
     "id": 2,
@@ -13,7 +18,13 @@
     "repoLink": "https://github.com/quipsquaff/project2",
     "img": "https://trizmo.github.io/main-profile/assets/img/verigate.png",
     "description": "A device created with security in mind. Verigate turns your gate operator into an IoT device, allowing you to control your gate operator by allowing who gets in.",
-    "type": "school"
+    "type": "work",
+    "projectPeriod": "NOVEMBER 2018 - DECEMBER 2018",
+    "accomplishments": [
+      "Lead IoT developer.",
+      "Assisted with user authentication."
+    ],
+    "techUsed": ["Arduino, Express, MySQL, NodeRed, MQTT"]
   },
   {
     "id": 3,
@@ -21,6 +32,38 @@
     "repoLink": "https://github.com/trizmo/boy-algo",
     "img": "https://trizmo.github.io/main-profile/assets/img/boyalgo.png",
     "description": "This stock alert bot scans a list of your stocks for its current price and compares it to the target prices you have set. @BoyAlgo will notify you with a tweet with the details of the alert.",
-    "type": "personal"
+    "type": "project",
+    "projectPeriod": "onGoing",
+    "accomplishments": [
+      
+    ],
+    "techUsed": ["Twitter API"]
+  },
+  {
+    "id": 4,
+    "name": "Battle-Tactics",
+    "repoLink": "http://github.com/mrStevenNg/Battle-Tactics/",
+    "img": "../assets/battle-tactics1.png",
+    "description": "A React Native fully mobile strategy planning app for table-top games.",
+    "type": "work",
+    "projectPeriod": "JANUARY 2019 - FEBRUARY 2019",
+    "accomplishments": [
+      "Co-developed all components for user flow.",
+      "Assisted with fetching data and saving to phone local storage."
+    ],
+    "techUsed": ["React Native"]
+  },
+  {
+    "id": 5,
+    "name": "Market-Systems v2",
+    "repoLink": "http://github.com/trizmo/stock-system/",
+    "img": "../assets/market-systems1.png",
+    "description": "A Web App to pull and display stock market and cryptocurrency data.",
+    "type": "project",
+    "projectPeriod": "onGoing",
+    "accomplishments": [
+
+    ],
+    "techUsed": ["AJAX"]
   }
 ]

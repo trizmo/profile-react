@@ -38,6 +38,9 @@ export default class NavBar extends Component {
                   <NavLink href="/skills/"> &lt;&frasl;skills and abilities&gt;</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink href="/resume/"> &lt;&frasl;resume&gt;</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink href="/contact/"> &lt;&frasl;contact&gt; </NavLink>
                 </NavItem>
               </Nav>

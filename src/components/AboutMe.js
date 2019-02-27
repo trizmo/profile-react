@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'reactstrap';
 
 import MyResume from '../data/resume/resume.pdf'
 import profilPic from '../assets/profile1.png'
+import Resume from './Resume'
 
 // const profilPic = "../assets/profile-tristan2.jpg"
 
@@ -66,23 +67,13 @@ export default class AboutMe extends Component {
           </Row>
         </Container>
 
-        <div style={styles.standard}>
-          <ul>
-            <li>Languages: JavaScript / ES7 | HTML5 | CSS</li>
-            <li>Frameworks: ReactNative | React | Express.js</li>
-            <li>Databases: MySQL, Sequelize | Firebase | Mongo, Mongoose</li>
-            <li>Technologies: Github | Git | Trello | ZenHub | KanBanFlow</li>
-          </ul>
+        <div style={styles.mainText} className="text-center">
+          Check out my Experience
         </div>
 
-        <div style={styles.standard}>
-          <ul>
-            <li>Languages: JavaScript / ES7 | HTML5 | CSS</li>
-            <li>Frameworks: ReactNative | React | Express.js</li>
-            <li>Databases: MySQL, Sequelize | Firebase | Mongo, Mongoose</li>
-            <li>Technologies: Github | Git | Trello | ZenHub | KanBanFlow</li>
-          </ul>
-        </div>
+        <Container style={styles.resumeSection}>
+          <Resume />
+        </Container>
 
 
       </Container>
@@ -96,6 +87,16 @@ const styles = {
     color: "#04030F",
     padding: 35,
     fontSize: "2em",
+    backgroundColor: "#fff",
+    marginTop: 0,
+    marginBottom: 20,
+    borderRadius: 5,
+    alignItems: "left",
+    boxShadow: "0px 0px 20px lightgrey"
+  },
+  resumeSection: {
+    color: "#04030F",
+    padding: 35,
     backgroundColor: "#fff",
     marginTop: 0,
     marginBottom: 20,
@@ -120,5 +121,14 @@ const styles = {
     color: "grey",
     fontSize: ".8em",
     fontFamily: "HomeMade Apple"
+  },
+  mainText: {
+    color: "#04030F",
+    padding: 35,
+    fontSize: "2em",
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    boxShadow: "0px 0px 10px lightgrey",
+    margin: 10,
   },
 }

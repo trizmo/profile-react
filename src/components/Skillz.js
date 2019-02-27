@@ -21,7 +21,7 @@ export default class Skillz extends Component {
 
         <div style={styles.mainText} className="text-center">
           Getting the tools needed to complete the job.
-    </div>
+        </div>
 
 
         <Container style={styles.mainContainer} className={"text-center"}>
