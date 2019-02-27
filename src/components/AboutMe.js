@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 import MyResume from '../data/resume/resume.pdf'
-import profilPic from '../assets/profile-tristan2.jpg'
+import profilPic from '../assets/profile1.png'
 
 // const profilPic = "../assets/profile-tristan2.jpg"
 
@@ -16,7 +16,13 @@ export default class AboutMe extends Component {
   }
 
   returnProfilePic() {
-    return <img src={profilPic} alt="Logo" style={{maxWidth:"500px"}}  />;
+    return <img src={profilPic} alt="Logo" style={
+      {
+        maxHeight:"400px",
+        borderRadius: 5
+
+      }    
+    }  />;
   }
 
   render() {
@@ -45,7 +51,13 @@ export default class AboutMe extends Component {
             
             </Col>
 
-            <Col>
+            <Col style={
+                {
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  alignItems: "center"
+                }
+              }>
               <div>
                 {this.returnProfilePic()}
               </div>
