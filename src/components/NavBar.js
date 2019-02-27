@@ -26,19 +26,19 @@ export default class NavBar extends Component {
       <div>
         <Navbar color="dark" dark expand="sm" className="mb-5" style={styles.navi}>
           <Container>
-            <NavbarBrand href="/" style={styles.mainHead}> Tristan Perera | Fullstack Developer </NavbarBrand>
+            <NavbarBrand href="/" style={styles.mainHead}> Tristan Perera | Software Engineer </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
 
-              <Nav navbar className="ml-auto">
+              <Nav navbar className="ml-auto" style={styles.navLinks}>
                 <NavItem>
-                  <NavLink href="/portfolio/"> &lt; &frasl; portfolio &gt;</NavLink>
+                  <NavLink href="/portfolio/"> &lt;&frasl;portfolio&gt;</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/skills/"> &lt; &frasl; skills and abilities &gt;</NavLink>
+                  <NavLink href="/skills/"> &lt;&frasl;skills and abilities&gt;</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/contact/"> &lt; &frasl; contact &gt; </NavLink>
+                  <NavLink href="/contact/"> &lt;&frasl;contact&gt; </NavLink>
                 </NavItem>
               </Nav>
 
@@ -52,12 +52,20 @@ export default class NavBar extends Component {
 
 const styles = {
   navi: {
-    padding: 0
+    // padding: 0
   },
   mainHead: {
-    fontFamily: "HomeMade Apple",
-    textDecoration: "underline",
+    // fontFamily: "HomeMade Apple",
+    // fontFamily: 'Overpass',
+    fontFamily: 'M PLUS 1p',
+    // fontFamily: 'Sarala',
+    textDecoration: "none",
     color: "#999",
-    fontSize: 16
+    fontSize: "1.75em",
+    fontWeight: 600,
+    paddingTop: 10,
+  },
+  navLinks: {
+    fontSize: "1.5em"
   }
 }

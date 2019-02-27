@@ -37,7 +37,6 @@ export default class AboutMe extends Component {
               </div>
 
               <Button outline size="lg" color="primary" href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
-                {console.log(MyResume)}
                 Download My Resume
               </Button>
             
