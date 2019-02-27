@@ -35,15 +35,6 @@ export default function ContactInfo() {
         </Col>
 
         <Col>
-          <a href="#" target="_blank" style={{ textDecoration: "none" }}>
-            <div style={styles.socialIcon} >
-              <FaFacebook />
-            </div>
-            Facebook
-            </a>
-        </Col>
-
-        <Col>
           <a href="https://twitter.com/lastskycaptain" target="_blank" style={{ textDecoration: "none" }}>
             <div style={styles.socialIcon} >
               <FaTwitter />

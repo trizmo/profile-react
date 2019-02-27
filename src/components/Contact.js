@@ -9,19 +9,13 @@ export default class Contact extends Component {
     return (
       <Container>
 
-        <div style={styles.mainText} className="text-center">
+        <div style={contactStyles.mainText} className="text-center">
           Let's see what we can build together!
         </div>
 
-        <Container>
-          <Row>
-            <Col>
-              <ContactForm />
-            </Col>
-            <Col>
-              <ContactInfo />
-            </Col>
-          </Row>
+        <Container styles={contactStyles.mainContainer}>
+          <ContactForm />
+          <ContactInfo />
         </Container>
 
 
@@ -31,7 +25,7 @@ export default class Contact extends Component {
   }
 }
 
-const styles = {
+const contactStyles = {
   mainText: {
     color: "#04030F",
     padding: 35,
@@ -40,5 +34,10 @@ const styles = {
     borderRadius: 5,
     boxShadow: "0px 0px 10px lightgrey",
     margin: 10
-  }
+  },
+  mainContainer: {
+    display: "flex",
+    flex: 1,
+    flexDirection: "col",
+  },
 }
