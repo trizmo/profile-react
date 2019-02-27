@@ -25,7 +25,15 @@ export default class Portfolio extends Component {
         {this.state.projects.map(project => {
           return (
             
-            <div style={{ display: "flex", flex: 1, margin: 10, }} key={project.id}>
+            <div style={
+              { 
+                // display: "flex", 
+                // flex: 1, 
+                // margin: 10,
+                flex: "1 0 21%",
+                margin: 5, 
+              }
+            } key={project.id}>
 
               <WorkCard
                 name={project.name}
