@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 import MyResume from '../data/resume/resume.pdf'
+import profilPic from '../assets/profile1.png'
 
-const profilPic = "https://s3-us-west-1.amazonaws.com/co-directory-images/tristan-perera-9ab28682.jpg"
+// const profilPic = "../assets/profile-tristan2.jpg"
 
 export default class AboutMe extends Component {
 
@@ -15,7 +16,13 @@ export default class AboutMe extends Component {
   }
 
   returnProfilePic() {
-    return <img src={profilPic} alt="Logo" style={{maxWidth:"500px"}}/>;
+    return <img src={profilPic} alt="Logo" style={
+      {
+        maxHeight:"400px",
+        borderRadius: 5
+
+      }    
+    }  />;
   }
 
   render() {
@@ -33,7 +40,9 @@ export default class AboutMe extends Component {
                 Software Engineer
               </div>
               <div>
-                Self-driven web developer with FullStack skills in current industry standards. Passionate about what these technological tools can do to help people achieve their goals, I'm more than eager to problem solve and help innovate. Always looking to better myself, learn new things and to be a valuable asset to any team by bringing my positive energy, and my exceptional problem solving skills
+                Self-driven developer with FullStack skills in current industry standards, I am about what these technological tools can do to help people achieve their goals, 
+                I'm more than eager to problem solve and help innovate. 
+                I am always looking to better myself, learn new things and to be a valuable asset to any team by bringing my positive energy, and my exceptional problem solving skills.
               </div>
 
               <Button outline size="lg" color="primary" href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
@@ -42,7 +51,13 @@ export default class AboutMe extends Component {
             
             </Col>
 
-            <Col>
+            <Col style={
+                {
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  alignItems: "center"
+                }
+              }>
               <div>
                 {this.returnProfilePic()}
               </div>
