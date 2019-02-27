@@ -85,7 +85,7 @@ export default class Resume extends Component {
           ))}
         </Container> */}
 
-        <Button outline size="lg" color="primary" href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
+        <Button outline size="lg" color="primary" style={{left: 0}} href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
           Download My Resume
         </Button>
       </Container>

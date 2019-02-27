@@ -41,9 +41,7 @@ export default class AboutMe extends Component {
                 Software Engineer
               </div>
               <div>
-                Self-driven developer with FullStack skills in current industry standards, I am about what these technological tools can do to help people achieve their goals, 
-                I'm more than eager to problem solve and help innovate. 
-                I am always looking to better myself, learn new things and to be a valuable asset to any team by bringing my positive energy, and my exceptional problem solving skills.
+              A passionate developer and a quick learner, with experience in mobile development, Internet of Things, and in back-end and front-end web development with high self-efficacy. Always looking to better myself, learn new things and to be a valuable asset to any team by bringing my positive energy, and my exceptional problem solving skills
               </div>
 
               <Button outline size="lg" color="primary" href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
