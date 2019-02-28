@@ -11,7 +11,7 @@
     "accomplishments": [
       "Assisted in research and development of new technologies."
     ],
-    "techUsed": ["WordPress", "Apache", "MAMP", "php"]
+    "techUsed": ["WordPress", "Apache", "MAMP", "php", "MySQL"]
   },
   {
     "id": 2,
@@ -26,7 +26,7 @@
       "Lead IoT developer.",
       "Assisted with user authentication."
     ],
-    "techUsed": ["Arduino, Express, MySQL, NodeRed, MQTT"]
+    "techUsed": ["Arduino", "ExpressJS", "MySQL", "NodeRed", "MQTT", "HandleBars" ]
   },
   {
     "id": 3,
@@ -40,14 +40,14 @@
     "accomplishments": [
       
     ],
-    "techUsed": ["Twitter API"]
+    "techUsed": ["Twitter API", "Firebase", "AJAX", "HTTPS"]
   },
   {
     "id": 4,
     "name": "Battle-Tactics",
     "repoLink": "http://github.com/mrStevenNg/Battle-Tactics/",
     "liveLink": "",
-    "img": "../assets/battle-tactics1.png",
+    "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/battle-tactics1.png",
     "description": "A React Native fully mobile strategy planning app for table-top games.",
     "type": "work",
     "projectPeriod": "JANUARY 2019 - FEBRUARY 2019",
@@ -55,34 +55,34 @@
       "Co-developed all components for user flow.",
       "Assisted with fetching data and saving to phone local storage."
     ],
-    "techUsed": ["React Native"]
+    "techUsed": ["React Native", "NativeBase", "Context API", "AsyncStorage", "fetch"]
   },
   {
     "id": 5,
     "name": "Market-Systems v2",
     "repoLink": "http://github.com/trizmo/stock-system/",
     "liveLink": "https://trizmo.github.io/stock-system/index.html",
-    "img": "../assets/market-systems1.png",
+    "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/market-systems1.png",
     "description": "A Web App to pull and display stock market and cryptocurrency data.",
     "type": "project",
     "projectPeriod": "onGoing",
     "accomplishments": [
 
     ],
-    "techUsed": ["AJAX"]
+    "techUsed": ["Firebase", "Bootstrap", "Google Fonts", "AJAX", "JQuery", "Firebase User Auth"]
   },
   {
     "id": 5,
     "name": "Clicker Game - React",
     "repoLink": "https://github.com/trizmo/clicker-game-react",
     "liveLink": "https://clicker-game-react1.herokuapp.com/",
-    "img": "#",
+    "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/click-game1.png",
     "description": "The rules are simple: select an image to gain a point, if you select an image that you already selected, you lose. If you select all 12 images without repeating any, you win!",
     "type": "school",
     "projectPeriod": "onGoing",
     "accomplishments": [
 
     ],
-    "techUsed": ["AJAX"]
+    "techUsed": ["ReactJS", "JavaScript"]
   }
 ]

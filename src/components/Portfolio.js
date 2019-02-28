@@ -36,10 +36,7 @@ export default class Portfolio extends Component {
             } key={project.id}>
 
               <WorkCard
-                name={project.name}
-                repoLink={project.repoLink}
-                description={project.description}
-                img={project.img}
+                data={project}
                 />
 
             </div>
