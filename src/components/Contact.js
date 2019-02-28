@@ -14,7 +14,7 @@ export default class Contact extends Component {
         </div>
 
         <Container styles={contactStyles.mainContainer}>
-          <ContactForm />
+          {/* <ContactForm /> */}
           <ContactInfo />
         </Container>
 

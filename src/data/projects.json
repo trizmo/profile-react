@@ -76,7 +76,7 @@
     "name": "Clicker Game - React",
     "repoLink": "https://github.com/trizmo/clicker-game-react",
     "liveLink": "https://clicker-game-react1.herokuapp.com/",
-    "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/click-game1.png",
+    "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/clicky-game1.png",
     "description": "The rules are simple: select an image to gain a point, if you select an image that you already selected, you lose. If you select all 12 images without repeating any, you win!",
     "type": "school",
     "projectPeriod": "onGoing",
