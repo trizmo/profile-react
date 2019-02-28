@@ -72,7 +72,7 @@
     "techUsed": ["Firebase", "Bootstrap", "Google Fonts", "AJAX", "JQuery", "Firebase User Auth"]
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Clicker Game - React",
     "repoLink": "https://github.com/trizmo/clicker-game-react",
     "liveLink": "https://clicker-game-react1.herokuapp.com/",
