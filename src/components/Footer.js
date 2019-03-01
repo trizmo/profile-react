@@ -58,7 +58,7 @@ const styles = {
     marginTop: 100,
   },
   containerStyle: {
-    padding: 35,
+    padding: 15,
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between"

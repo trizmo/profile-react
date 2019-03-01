@@ -2,7 +2,7 @@
   "name": "profile-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://trizmo.github.io/profile-react",
+  "homepage": "http://www.tristanperera.com",
   "dependencies": {
     "bootstrap": "^4.3.0",
     "gh-pages": "^2.0.1",

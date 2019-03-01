@@ -56,7 +56,8 @@ export default class NavBar extends Component {
 
 const styles = {
   navi: {
-    // padding: 0
+    // padding: 0,
+    // margin: 0
   },
   mainHead: {
     // fontFamily: "HomeMade Apple",
@@ -70,6 +71,7 @@ const styles = {
     paddingTop: 10,
   },
   navLinks: {
-    fontSize: "1.5em"
+    fontSize: "1.4em",
+    // width: "90%"
   }
 }

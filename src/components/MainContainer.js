@@ -22,7 +22,6 @@ export default class MainContainer extends Component {
             <Route exact path="/resume" component={Resume} />
           </Switch>
         </HashRouter>
-
       </Container>
     )
   }

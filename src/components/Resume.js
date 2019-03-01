@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Button } from 'reactstrap';
+import { Row, Container, Button } from 'reactstrap';
+
 
 import expData from '../data/projects.json';
 import skillData from '../data/skillz.json';
@@ -28,7 +29,7 @@ export default class Resume extends Component {
 
         <Container style={resumeStyles.workContainer}>
           <div style={resumeStyles.head}>
-            <span>My Work Experiences</span>
+            <span>Work Experience</span>
           </div>
 
           {this.state.experience.map(exp => (
@@ -122,9 +123,9 @@ const resumeStyles = {
     fontStyle: "italic"
   },
   workContainer: {
-    padding: 20
+    padding: 0
   },
   projectContainer: {
-    padding: 20
+    padding: 0
   }
 }
