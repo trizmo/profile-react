@@ -7,6 +7,7 @@
     "img": "https://trizmo.github.io/main-profile/assets/img/gingerrednat-fullweb.png",
     "description": "GingerRed Naturals is for a Mom in Montana that had a need for a showcase of her home-made natural products for her community.",
     "type": "work",
+    "position": "Wordpress / Backend Developer",
     "projectPeriod": "OCTOBER 2018 - NOVEMBER 2018",
     "accomplishments": [
       "Assisted in research and development of new technologies."
@@ -21,6 +22,7 @@
     "img": "https://trizmo.github.io/main-profile/assets/img/verigate.png",
     "description": "A device created with security in mind. Verigate turns your gate operator into an IoT device, allowing you to control your gate operator by allowing who gets in.",
     "type": "work",
+    "position": "Lead IoT / Hardware Developer",
     "projectPeriod": "NOVEMBER 2018 - DECEMBER 2018",
     "accomplishments": [
       "Lead IoT developer.",
@@ -36,6 +38,7 @@
     "img": "https://trizmo.github.io/main-profile/assets/img/boyalgo.png",
     "description": "This stock alert bot scans a list of your stocks for its current price and compares it to the target prices you have set. @BoyAlgo will notify you with a tweet with the details of the alert.",
     "type": "project",
+    "position": "",
     "projectPeriod": "onGoing",
     "accomplishments": [
       
@@ -50,6 +53,7 @@
     "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/battle-tactics1.png",
     "description": "A React Native fully mobile strategy planning app for table-top games.",
     "type": "work",
+    "position": "React Native Developer",
     "projectPeriod": "JANUARY 2019 - FEBRUARY 2019",
     "accomplishments": [
       "Co-developed all components for user flow.",
@@ -65,6 +69,7 @@
     "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/market-systems1.png",
     "description": "A Web App to pull and display stock market and cryptocurrency data.",
     "type": "project",
+    "position": "",
     "projectPeriod": "onGoing",
     "accomplishments": [
 
@@ -79,6 +84,7 @@
     "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/clicky-game1.png",
     "description": "The rules are simple: select an image to gain a point, if you select an image that you already selected, you lose. If you select all 12 images without repeating any, you win!",
     "type": "school",
+    "position": "",
     "projectPeriod": "onGoing",
     "accomplishments": [
 

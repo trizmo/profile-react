@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter , Route, Switch } from 'react-router-dom';
 
 // Components
 import AboutMe from './AboutMe';
@@ -13,15 +13,15 @@ export default class MainContainer extends Component {
   render() {
     return (
       <Container style={styles.mainContainer}>
-        <Router>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/" component={AboutMe} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/skills" component={Skills} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/resume" component={Resume} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/skills" component={Skills} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/resume" component={Resume} />
           </Switch>
-        </Router>
+        </HashRouter>
 
       </Container>
     )
