@@ -37,7 +37,8 @@ export default class Resume extends Component {
               (
                 <div style={resumeStyles.exxp} key={exp.id}>
                   <span style={resumeStyles.name}>{exp.name} | </span>
-                  <span style={resumeStyles.projectPeriod}>{exp.projectPeriod}</span>
+                  <span style={resumeStyles.position}>{exp.position}</span>
+                  <p style={resumeStyles.projectPeriod}>{exp.projectPeriod}</p>
                   <p style={resumeStyles.description}>{exp.description}</p>
                   {exp.accomplishments.map(accomp => (
                     <ul key={accomp}>
@@ -121,6 +122,9 @@ const resumeStyles = {
   },
   projectPeriod: {
     fontStyle: "italic"
+  },
+  position: {
+
   },
   workContainer: {
     padding: 0

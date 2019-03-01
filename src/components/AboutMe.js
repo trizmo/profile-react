@@ -42,7 +42,7 @@ export default class AboutMe extends Component {
               </div>
               <div>
               A passionate developer and a quick learner with experience in mobile development, Internet of Things, and in back-end and front-end web development. 
-              I am always looking to better myself and learn new things. Consistently growing, I bring a high quality value to any team by bringing my positive energy, my exceptional problem solving skills, and my High Self-Efficacy.
+              I am always looking to better myself and learn new things. Consistently growing, I bring a high quality value to any team by bringing positive energy, exceptional problem solving skills, and high Self-Efficacy.
               </div>
 
               <Button outline size="lg" color="primary" href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
