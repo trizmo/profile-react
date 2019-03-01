@@ -27,7 +27,7 @@ export default class NavBar extends Component {
       <div>
         <Navbar color="dark" dark expand="sm" className="mb-5" style={styles.navi}>
           <Container>
-            <NavbarBrand href="/" style={styles.mainHead}> Tristan Perera | Software Engineer </NavbarBrand>
+            <NavbarBrand href="#/" style={styles.mainHead}> Tristan Perera | Software Engineer </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
 
