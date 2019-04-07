@@ -111,7 +111,8 @@ const resumeStyles = {
     boxShadow: "0px 0px 3px lightgrey"
   },
   head: {
-    fontSize: "1.125em"
+    fontSize: "1.125em",
+    padding: 5
   },
   name: {
     fontWeight: "bold"
