@@ -11,11 +11,11 @@ const User = require('../../model/User');
 // GET ROUTE api/userProfile
 // This route will GET ALL userProfiles from db
 // Access: DEVELOPMENT ONLY
-router.get('/', (req, res) => {
-  console.log("getting ALL users")
-  User.find()
-    .then(profile => res.json(profile))
-})
+// router.get('/', (req, res) => {
+//   console.log("getting ALL users")
+//   User.find()
+//     .then(profile => res.json(profile))
+// })
 
 // POST ROUTE api/users
 // This route will register a new user
