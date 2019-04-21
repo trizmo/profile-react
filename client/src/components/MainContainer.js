@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import { HashRouter , Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // REDUX
 import { connect } from 'react-redux';
@@ -18,14 +18,14 @@ import Dashboard from './Dashboard'
 class MainContainer extends Component {
   render() {
     const { isAuthenticated, user } = this.props.auth
-    
+
     const userDashboard = (
       <Dashboard />
     )
 
     const noUser = (
-            <Container style={styles.mainContainer}>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+      <Container style={styles.mainContainer}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/" component={AboutMe} />
             <Route exact path="/portfolio" component={Portfolio} />
@@ -34,21 +34,21 @@ class MainContainer extends Component {
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/lejonbrames" component={Login} />
           </Switch>
-        </HashRouter>
+        </BrowserRouter>
       </Container>
     )
 
     return (
       <Container style={styles.mainContainer}>
 
-      {isAuthenticated ? userDashboard : noUser}
+        {isAuthenticated ? userDashboard : noUser}
 
       </Container>
     )
   }
 }
 
-const styles ={
+const styles = {
   mainContainer: {
     marginBottom: 200
   }
