@@ -14,7 +14,7 @@ export default class Contact extends Component {
         </div>
 
         <Container styles={contactStyles.mainContainer}>
-          {/* <ContactForm /> */}
+          <ContactForm />
           <ContactInfo />
         </Container>
 
@@ -37,7 +37,6 @@ const contactStyles = {
   },
   mainContainer: {
     display: "flex",
-    flex: 1,
-    flexDirection: "col",
+    flexDirection: "row",
   },
 }
