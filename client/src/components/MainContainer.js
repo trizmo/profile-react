@@ -41,7 +41,8 @@ class MainContainer extends Component {
     return (
       <Container style={styles.mainContainer}>
 
-        {isAuthenticated ? userDashboard : noUser}
+        {isAuthenticated === true ? userDashboard : noUser}
+        {/* {noUser} */}
 
       </Container>
     )
