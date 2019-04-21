@@ -44,16 +44,16 @@ class NavBar extends Component {
     const noUser = (
       <Nav navbar className="ml-auto" style={styles.navLinks}>
       <NavItem>
-        <NavLink href="#/portfolio"  to="/portfolio"> &lt;&frasl;portfolio&gt;</NavLink>
+        <NavLink href="/portfolio"  to="/portfolio"> &lt;&frasl;portfolio&gt;</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#/skills" to="/skills"> &lt;&frasl;skills and abilities&gt;</NavLink>
+        <NavLink href="/skills" to="/skills"> &lt;&frasl;skills and abilities&gt;</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#/resume"  to="/resume"> &lt;&frasl;resume&gt;</NavLink>
+        <NavLink href="/resume"  to="/resume"> &lt;&frasl;resume&gt;</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#/contact" to="/contact"> &lt;&frasl;contact&gt; </NavLink>
+        <NavLink href="/contact" to="/contact"> &lt;&frasl;contact&gt; </NavLink>
       </NavItem>
     </Nav>
     )
