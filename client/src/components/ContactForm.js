@@ -1,28 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Form, FormGroup, Label, Input, Button, Container } from 'reactstrap';
 
-export default function ContactForm() {
-  return (
-    <Container>
-      <Form>
+// REDUX
+import { connect } from 'react-redux';
+import { addContactMessage } from '../store/actions/contactMessagesActions';
+
+class ContactForm extends Component {
+  state = {
+    name: "",
+    email: "",
+    message: ""
+  }
+
+  onChange = event => {
+    this.setState({ [event.target.name]: event.target.value }, () => {
+    })
+  }
+
+  onSubmit = event => {
+    event.preventDefault();
+    // const { user } = this.props.auth
+    const newMessage = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+    }
+
+    this.props.addContactMessage( newMessage);
+    console.log("message sent!", newMessage)
+  }
+
+
+
+  render() {
+    return (
+      <div>
+        <Form onSubmit={this.onSubmit}>
         <FormGroup>
           <Label for="contactEmail">Email</Label>
-          <Input type="email" name="email" id="contactEmail" placeholder="Enter Your Email..." />
+          <Input type="email" name="email" id="contactEmail" placeholder="Enter Your Email..." onChange={this.onChange}/>
         </FormGroup>
 
         <FormGroup>
           <Label for="contactName">Name</Label>
-          <Input type="text" name="name" id="contactName" placeholder="Enter Your Name..." />
+          <Input type="text" name="name" id="contactName" placeholder="Enter Your Name..." onChange={this.onChange}/>
         </FormGroup>
 
         <FormGroup>
           <Label for="contactMessage">Message</Label>
-          <Input type="textarea" name="message" id="contactMessage" />
+          <Input type="textarea" name="message" id="contactMessage" onChange={this.onChange}/>
         </FormGroup>
 
         <Button>Submit</Button>
       </Form>
-    </Container>
-  )
+      </div>
+    )
+  }
 }
 
+const mapStateToProps = state => ({
+  auth: state.auth,
+  contactMessage: state.contactMessage
+})
+
+export default connect(mapStateToProps, { addContactMessage })(ContactForm)

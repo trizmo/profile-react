@@ -16,7 +16,8 @@ mongoose
 
 // ROUTING
 app.use("/api/messages", require("./routes/api/contactMessage"))
-
+app.use('/api/users', require('./routes/api/users'))
+app.use('/api/auth', require('./routes/api/auth'))
 
 if(process.env.NODE_ENV === "production"){
   app.use(express.static("client/build"))

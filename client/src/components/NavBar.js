@@ -11,7 +11,15 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
-export default class NavBar extends Component {
+// REDUX
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+// COMPONENTS
+import Logout from './Logout'
+
+class NavBar extends Component {
+  
   state = {
     isOpen: false
   }
@@ -23,6 +31,33 @@ export default class NavBar extends Component {
   }
 
   render() {
+    const { isAuthenticated, user } = this.props.auth
+    
+    const authenticated = (
+      <Nav navbar className="ml-auto" style={styles.navLinks}>
+      <NavItem>
+        <Logout />
+      </NavItem>
+    </Nav>
+    )
+
+    const noUser = (
+      <Nav navbar className="ml-auto" style={styles.navLinks}>
+      <NavItem>
+        <NavLink href="#/portfolio"  to="/portfolio"> &lt;&frasl;portfolio&gt;</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="#/skills" to="/skills"> &lt;&frasl;skills and abilities&gt;</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="#/resume"  to="/resume"> &lt;&frasl;resume&gt;</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="#/contact" to="/contact"> &lt;&frasl;contact&gt; </NavLink>
+      </NavItem>
+    </Nav>
+    )
+    
     return (
       <div>
         <Navbar color="dark" dark expand="sm" className="mb-5" style={styles.navi}>
@@ -31,20 +66,8 @@ export default class NavBar extends Component {
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
 
-              <Nav navbar className="ml-auto" style={styles.navLinks}>
-                <NavItem>
-                  <NavLink href="#/portfolio"  to="/portfolio"> &lt;&frasl;portfolio&gt;</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#/skills" to="/skills"> &lt;&frasl;skills and abilities&gt;</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#/resume"  to="/resume"> &lt;&frasl;resume&gt;</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#/contact" to="/contact"> &lt;&frasl;contact&gt; </NavLink>
-                </NavItem>
-              </Nav>
+            {isAuthenticated ? authenticated : noUser}
+
 
             </Collapse>
           </Container>
@@ -75,3 +98,10 @@ const styles = {
     // width: "90%"
   }
 }
+
+const mapStateToProps = state => ({
+  auth: state.auth
+})
+
+
+export default connect(mapStateToProps, null)(NavBar)

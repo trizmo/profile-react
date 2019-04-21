@@ -1,7 +1,7 @@
 import { GET_CONTACTMESSAGES, ADD_CONTACTMESSAGE, DELETE_CONTACTMESSAGE, CONTACTMESSAGES_LOADING } from '../actions/types';
 
 const initialState = {
-  simpleAlerts: [],
+  messages: [],
   loading: false
 }
 
@@ -11,20 +11,20 @@ export default function (state = initialState, action) {
     case GET_CONTACTMESSAGES:
       return {
         ...state,
-        simpleAlerts: action.payload,
+        messages: action.payload,
         loading: false
       }
 
     case DELETE_CONTACTMESSAGE:
       return {
         ...state,
-        simpleAlerts: state.simpleAlerts.filter(alert => alert._id !== action.payload)
+        messages: state.messages.filter(msg => msg._id !== action.payload)
       }
 
     case ADD_CONTACTMESSAGE:
       return {
         ...state,
-        simpleAlerts: [...state.simpleAlerts, action.payload]
+        messages: [...state.messages, action.payload]
       }
 
     case CONTACTMESSAGES_LOADING:

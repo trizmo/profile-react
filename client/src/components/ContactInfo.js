@@ -11,7 +11,7 @@ export default function ContactInfo() {
       </div>
 
       <div style={styles.phoneNumber} className="text-center">
-        562.555.5555
+        562.204.6358
       </div>
 
       <Row style={styles.socialMedia} className="text-center">

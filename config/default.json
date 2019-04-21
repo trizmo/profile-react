@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb://tristan:test123!@ds021166.mlab.com:21166/profile-db"
+  "mongoURI": "mongodb://tristan:test123!@ds021166.mlab.com:21166/profile-db",
+  "jwtSecret": "iCANbelieveit'snotbutter"
 }
