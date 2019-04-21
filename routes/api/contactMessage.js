@@ -4,7 +4,7 @@ const auth = require('../../middleware/auth')
 
 const contactMessage = require("../../model/ContactMessage")
 
-router.get("/", (req, res) => {
+router.get("/", auth, (req, res) => {
   contactMessage.find().sort({date: -1})
     .then(msg => res.json(msg))
 })

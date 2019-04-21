@@ -3,10 +3,10 @@ import { GET_CONTACTMESSAGES, ADD_CONTACTMESSAGE, DELETE_CONTACTMESSAGE, CONTACT
 import { tokenConfig } from './authActions';
 import { returnErrors } from './errorActions'
 
-export const getContactMessages = () => dispatch => {
+export const getContactMessages = () => (dispatch, getState) => {
   dispatch(setContactMessagesLoading());
   axios
-    .get('/api/messages')
+    .get('/api/messages', tokenConfig(getState))
     .then(res =>
       dispatch({
         type: GET_CONTACTMESSAGES,
