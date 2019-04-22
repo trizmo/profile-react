@@ -14,6 +14,13 @@ mongoose
   .then(() => console.log("Connected to mongoDB..."))
   .catch(err => console.log("ERROR: ", err) )
 
+  
+    // ROUTING
+  app.use("/api/messages", require("./routes/api/contactMessage"))
+  app.use('/api/users', require('./routes/api/users'))
+  app.use('/api/auth', require('./routes/api/auth'))
+
+
   if(process.env.NODE_ENV === "production"){
     app.use(express.static("client/build"))
     app.get('/*', (req, res) => {
@@ -27,11 +34,6 @@ mongoose
     //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
     // })
   }
-
-  // ROUTING
-app.use("/api/messages", require("./routes/api/contactMessage"))
-app.use('/api/users', require('./routes/api/users'))
-app.use('/api/auth', require('./routes/api/auth'))
 
 
 app.listen(port, () => console.log("Server started on port: ", port))
