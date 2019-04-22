@@ -55,11 +55,11 @@ router.post('/', (req, res) => {
 // GET ROUTE api/auth/user
 // Get user data
 // Access: PRIVATE
-// router.get('/users', auth, (req, res) => {
-//   User.findById(req.user.id)
-//     .select('-password')
-//     .then(user => res.json(user))
-// })
+router.get('/users', auth, (req, res) => {
+  User.findById(req.user.id)
+    .select('-password')
+    .then(user => res.json(user))
+})
 
 
 
