@@ -18,13 +18,16 @@ class ContactForm extends Component {
   }
 
   onSubmit = event => {
-    event.preventDefault();
+    // event.preventDefault();
     // const { user } = this.props.auth
     const newMessage = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     }
+
+    // replace with simple modal
+    alert("message sent")
 
     this.props.addContactMessage( newMessage);
     console.log("message sent!", newMessage)
