@@ -19,6 +19,7 @@ mongoose
   app.use("/api/messages", require("./routes/api/contactMessage"))
   app.use('/api/users', require('./routes/api/users'))
   app.use('/api/auth', require('./routes/api/auth'))
+  app.use('/api/jobdetail', require('./routes/api/jobdetail'))
 
 
   if(process.env.NODE_ENV === "production"){
