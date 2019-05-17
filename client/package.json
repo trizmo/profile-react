@@ -26,7 +26,7 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:25091",
   "eslintConfig": {
     "extends": "react-app"
   },
