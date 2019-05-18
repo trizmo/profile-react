@@ -22,8 +22,8 @@ class contactMessages extends Component {
 
     return (
       <Container>
-        {console.log(contactMessages.messages)}
-        {contactMessages.messages.length >= 1 ? (
+        {/* {console.log(contactMessages.messages)} */}
+        {contactMessages.messages.length > 0 ? (
           contactMessages.messages.map(msg => (
             <ListGroup style={styles.wrapper}>
               <TransitionGroup>
