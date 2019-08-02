@@ -3,13 +3,17 @@ import { Container } from 'reactstrap';
 
 // COMPONENTS
 import Messages from './AdminPanel/Messages/Messages'
+import JobDetails from './AdminPanel/JobDetails/JobDetails';
+import DBNavBar from './AdminPanel/DBNav/DBNavBar';
+import DashboardWrapper from './DashboardWrapper'
 
 export default function Dashboard() {
   return (
     <Container>
       <div>
-        <h5>Welcome back, Mr. Perera </h5>
-        <Messages />
+        <DBNavBar />
+        <DashboardWrapper />
+
       </div>
     </Container>
   )
