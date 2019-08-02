@@ -34,6 +34,28 @@ const Footer = () => {
           </Col>
         </Row>
 
+        <Row style={styles.footerInfo}>
+        <Col>
+          <p>
+            Phone: 562.204.6358
+          </p>
+          <p>
+            Email: tristan.e.perera@gmail.com
+          </p>
+          <p>
+            <a href="#/lejonbrames">Admin Login</a>
+          </p>
+         </Col>
+         <Col>
+         {/* <p>
+           Blog
+         </p> */}
+         <p>
+           Download Resume
+         </p>
+         </Col>
+        </Row>
+
         {/* <Row style={{marginTop: 10}}>
             <p>tristan.e.perera@gmail.com</p>
         </Row>
@@ -49,21 +71,28 @@ const Footer = () => {
 
 const styles = {
   mainFooter: {
-    position: "fixed",
+    position: "static",
     width: "100%",
     bottom: 0,
     backgroundColor: "#393D3F",
     color: "lightgrey",
     boxShadow: "0px 0px 10px lightgrey",
-    marginTop: 100,
+    marginTop: 0,
   },
   containerStyle: {
     padding: 15,
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between"
-
+  },
+  textStyleNone: {
+    textDecorationLine: "none",
+    textDecorationColor: "white",
+  },
+  footerInfo: {
+    padding: 20,
   }
+
 
 }
 
