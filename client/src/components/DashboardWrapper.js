@@ -30,7 +30,7 @@ class DashboardWrapper extends Component {
 
 const styles = {
   mainContainer: {
-    marginBottom: 200
+    marginBottom: 25
   }
 }
 

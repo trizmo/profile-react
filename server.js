@@ -4,17 +4,17 @@ const path = require("path");
 // const MongoClient = require('mongodb').MongoClient;
 // const assert = require('assert');
 // process.env.NODE_CONFIG_DIR = './config'
-// const config = require("config");
+const config = require("config");
 // process.env.NODE_ENV = 'production';
 // console.log('NODE_CONFIG_ENV: ' + config.util.getEnv('NODE_CONFIG_ENV'));
 
-const port = process.env.PORT || 25502;
+const port = process.env.PORT || 5000;
 
 const app = express();
 app.use(express.json());
 
 
-const url = "mongodb://freehostia:free321321qwe@ds021166.mlab.com:21166/profile-db"
+const url = config.get("mongoURI")
 const options = {
   server: {
     socketOptions: {

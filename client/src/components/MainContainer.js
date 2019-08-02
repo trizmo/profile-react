@@ -14,6 +14,7 @@ import Contact from './Contact'
 import Resume from './Resume'
 import Login from './Login'
 import Dashboard from './Dashboard'
+import { callbackify } from 'util';
 
 class MainContainer extends Component {
   render() {
@@ -51,7 +52,8 @@ class MainContainer extends Component {
 
 const styles = {
   mainContainer: {
-    marginBottom: 200
+    marginBottom: 20,
+    minHeight: "calc(100vh - 62px - 134.5px)",
   }
 }
 
