@@ -36,16 +36,16 @@ class DBNavBar extends Component {
       <div>
         <Navbar color="light" light expand="sm" className="mb-5" style={styles.navi}>
           <Container>
-            <NavbarBrand href="#/lejonbrames/" style={styles.mainHead}> Welcome Back, Mr. Perera </NavbarBrand>
+            <NavbarBrand href="/lejonbrames" style={styles.mainHead}> Welcome Back, Mr. Perera </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
 
               <Nav navbar className="ml-auto" style={styles.navLinks}>
                 <NavItem>
-                  <NavLink href="#/lejonbrames/messages" to="/lejonbrames/messages"> Messages</NavLink>
+                  <NavLink href="/lejonbrames/messages" to="/lejonbrames/messages"> Messages</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#/lejonbrames/jobs" to="/lejonbrames/jobs"> Jobs</NavLink>
+                  <NavLink href="/lejonbrames/jobs" to="/lejonbrames/jobs"> Jobs</NavLink>
                 </NavItem>
 
               </Nav>

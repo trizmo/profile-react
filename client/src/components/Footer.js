@@ -43,7 +43,7 @@ const Footer = () => {
             Email: tristan.e.perera@gmail.com
           </p>
           <p>
-            <a href="#/lejonbrames">Admin Login</a>
+            <a href="/lejonbrames">Admin Login</a>
           </p>
          </Col>
          <Col>
@@ -76,7 +76,7 @@ const styles = {
     bottom: 0,
     backgroundColor: "#393D3F",
     color: "lightgrey",
-    boxShadow: "0px 0px 10px lightgrey",
+    // boxShadow: "0px 0px 10px lightgrey",
     marginTop: 0,
   },
   containerStyle: {

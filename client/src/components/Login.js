@@ -79,7 +79,7 @@ class LoginModal extends Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.loginDiv}>
         {/* <NavLink onClick={this.toggle}  href="#">
           Login
         </NavLink> */}
@@ -140,6 +140,9 @@ class LoginModal extends Component {
 const styles = {
   errorMSG: {
     color: "red",
+  },
+  loginDiv: {
+    maxWidth: "300px"
   }
 }
 

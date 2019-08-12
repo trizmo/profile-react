@@ -4,12 +4,12 @@ const auth = require('../../middleware/auth')
 
 const jobDetail = require("../../model/JobDetail")
 
-router.get("/", (req, res) => {
+router.get("/", auth, (req, res) => {
   jobDetail.find().sort({enterDate: -1})
     .then(msg => res.json(msg))
 })
 
-router.post("/", (req, res) => {
+router.post("/", auth, (req, res) => {
 
   const newJob = new jobDetail({
     

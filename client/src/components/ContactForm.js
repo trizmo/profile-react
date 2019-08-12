@@ -30,7 +30,7 @@ class ContactForm extends Component {
     alert("message sent")
 
     this.props.addContactMessage( newMessage);
-    console.log("message sent!", newMessage)
+    // console.log("message sent!", newMessage)
   }
 
 

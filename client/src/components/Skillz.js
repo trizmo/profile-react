@@ -15,7 +15,7 @@ export default class Skillz extends Component {
 
   render() {
     return (
-      <Container>
+      <div>
 
 
 
@@ -24,7 +24,7 @@ export default class Skillz extends Component {
         </div>
 
 
-        <Container style={styles.mainContainer} className={"text-center"}>
+        <div style={styles.mainContainer} className={"text-center"}>
 
           {this.state.skills.map(skill => {
             return (
@@ -53,8 +53,8 @@ export default class Skillz extends Component {
           })}
 
 
-        </Container>
-      </Container>
+        </div>
+      </div>
     )
   }
 }
@@ -66,7 +66,7 @@ const styles = {
     fontSize: "2em",
     backgroundColor: "#fff",
     borderRadius: 5,
-    boxShadow: "0px 0px 10px lightgrey",
+    // boxShadow: "0px 0px 10px lightgrey",
     margin: 10,
   },
   mainContainer: {

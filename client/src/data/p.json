@@ -4,7 +4,7 @@
     "name": "Battle-Tactics",
     "repoLink": "http://github.com/mrStevenNg/Battle-Tactics/",
     "liveLink": "",
-    "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/src/assets/battle-tactics1.png",
+    "img": "https://raw.githubusercontent.com/trizmo/profile-react/master/client/src/assets/battle-tactics1.png",
     "description": "A React Native fully mobile strategy planning app for table-top games.",
     "type": "work",
     "position": "React Native Developer",

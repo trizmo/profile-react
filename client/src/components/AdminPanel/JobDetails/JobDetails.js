@@ -14,6 +14,7 @@ class jobDetails extends Component {
 
   componentDidMount() {
     this.props.getJobDetails()
+    // console.log("job details running")
   }
 
   render() {

@@ -5,7 +5,7 @@ import { returnErrors } from './errorActions'
 
 export const getJobDetails = () => (dispatch, getState) => {
   dispatch(setJobDetailsLoading());
-  // console.log("action working")
+  console.log("action working")
   axios
     .get('/api/jobdetail', tokenConfig(getState))
     .then(res =>

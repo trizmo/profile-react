@@ -13,10 +13,10 @@ export default class Contact extends Component {
           Let's see what we can build together!
         </div>
 
-        <Container styles={contactStyles.mainContainer}>
-          <ContactForm />
+        <div styles={contactStyles.mainContainer}>
           <ContactInfo />
-        </Container>
+          <ContactForm />
+        </div>
 
 
 
@@ -32,11 +32,13 @@ const contactStyles = {
     fontSize: "2em",
     backgroundColor: "#fff",
     borderRadius: 5,
-    boxShadow: "0px 0px 10px lightgrey",
+    // boxShadow: "0px 0px 10px lightgrey",
     margin: 10
   },
   mainContainer: {
     display: "flex",
     flexDirection: "row",
+    alignItems: "flex-end"
+    // flexWrap: "nowarap"
   },
 }

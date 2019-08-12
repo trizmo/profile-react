@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // REDUX
 import { connect } from 'react-redux';
@@ -25,8 +25,8 @@ class MainContainer extends Component {
     )
 
     const noUser = (
-      <Container style={styles.mainContainer}>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+      <div style={styles.mainContainer}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/" component={AboutMe} />
             <Route exact path="/portfolio" component={Portfolio} />
@@ -35,8 +35,8 @@ class MainContainer extends Component {
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/lejonbrames" component={Login} />
           </Switch>
-        </HashRouter>
-      </Container>
+        </BrowserRouter>
+      </div>
     )
 
     return (

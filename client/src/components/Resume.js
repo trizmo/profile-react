@@ -5,6 +5,7 @@ import { Row, Container, Button } from 'reactstrap';
 import expData from '../data/projects.json';
 import skillData from '../data/skillz.json';
 import MyResume from '../data/resume/resume.pdf'
+import { FaRegIdBadge } from 'react-icons/fa';
 
 
 export default class Resume extends Component {
@@ -21,13 +22,13 @@ export default class Resume extends Component {
   render() {
     return (
 
-      <Container style={resumeStyles.mainContainer}>
+      <div style={resumeStyles.mainContainer}>
         {/* <div style={resumeStyles.mainHead}>
             <span>My Resume</span>
           </div> */}
 
 
-        <Container style={resumeStyles.workContainer}>
+        <div style={resumeStyles.workContainer}>
           <div style={resumeStyles.head}>
             <span>Work Experience</span>
           </div>
@@ -46,14 +47,14 @@ export default class Resume extends Component {
                     </ul>
                   ))}
                   <a href={exp.repoLink}><p>Github Repo</p></a>
-                  {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (console.log("")) }
+                  {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (null) }
                   
                 </div>
-              ) : (console.log(""))
+              ) : (null)
           ))}
-        </Container>
+        </div>
 
-        <Container style={resumeStyles.projectContainer}>
+        <div style={resumeStyles.projectContainer}>
           <div style={resumeStyles.head}>
             <span>My Projects</span>
           </div>
@@ -69,12 +70,12 @@ export default class Resume extends Component {
                   </ul>
                 ))}
                 <a href={exp.repoLink}><p>Github Repo</p></a>
-                {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (console.log("")) }
+                {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (null) }
 
-              </div>) : (console.log(""))
+              </div>) : (null)
 
           ))}
-        </Container>
+        </div>
 
         {/* <Container style={resumeStyles.workContainer}>
           <div style={resumeStyles.head}>
@@ -93,7 +94,7 @@ export default class Resume extends Component {
         <Button outline size="lg" color="primary" style={{left: 0}} href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
           Download My Resume
         </Button>
-      </Container>
+      </div>
 
 
 
@@ -108,7 +109,8 @@ const resumeStyles = {
   exxp: {
     padding: 5,
     margin: 5,
-    boxShadow: "0px 0px 3px lightgrey"
+    // boxShadow: "0px 0px 3px lightgrey",
+    backgroundColor: "rgba(255, 255, 255, 0.7)"
   },
   head: {
     fontSize: "1.125em",

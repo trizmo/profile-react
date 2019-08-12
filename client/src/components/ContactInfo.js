@@ -5,13 +5,13 @@ import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 export default function ContactInfo() {
   return (
-    <Container>
+    <div>
       <div style={styles.email} className="text-center">
         tristan.e.perera@gmail.com
       </div>
 
       <div style={styles.phoneNumber} className="text-center">
-        562.204.6358
+        (562) 204-6358
       </div>
 
       <Row style={styles.socialMedia} className="text-center">
@@ -44,7 +44,7 @@ export default function ContactInfo() {
         </Col>
 
       </Row>
-    </Container>
+    </div>
   )
 }
 const styles = {
