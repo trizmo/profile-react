@@ -51,26 +51,15 @@ app.use('/api/auth', require('./routes/api/auth'))
 app.use('/api/jobdetail', require('./routes/api/jobDetail'))
 app.use('/api/timelog', require('./routes/api/timeLog'))
 
-
-if (process.env.NODE_ENV === "production") {
+// Serve static assets if in production
+if (process.env.NODE_ENV === 'production') {
   console.log("=== PRODUCTION MODE ===")
+
+  // Set static folder
   app.use(express.static("client/build"))
-  app.get('/*', (req, res) => {
-    console.log("app.get * hit")
-    console.log(res)
-    let url = path.resolve(__dirname, "client", "build", "index.html");
-    if (!url.startsWith('/api/')){
-      url = url.substring(1);
-    } // we're on local windows
-    res.sendFile(url);
-    // res.send(`
-    // <html>
-    // <body>
-    // <h1>test works</h1>
-    // </body>
-    // </html>
-    // `);
-  });
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  })
 } else { console.log("=== not in production mode ===") }
 
 
