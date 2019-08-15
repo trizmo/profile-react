@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 import ContactForm from './ContactForm'
 import ContactInfo from './ContactInfo'
@@ -38,7 +38,8 @@ const contactStyles = {
   mainContainer: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "flex-end"
+    alignItems: "flex-end",
+    flex: "1 0 48%",
     // flexWrap: "nowarap"
   },
 }

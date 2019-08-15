@@ -17,7 +17,7 @@ class contactMessages extends Component {
   }
 
   render() {
-    const { isAuthenticated } = this.props.auth
+    // const { isAuthenticated } = this.props.auth
     const contactMessages = this.props.contactMessages
 
     return (

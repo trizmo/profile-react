@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+// import { Container } from 'reactstrap';
+// import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
 
 import WorkCard from './WorkCard';

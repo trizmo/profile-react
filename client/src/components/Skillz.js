@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+// import { Container } from 'reactstrap';
 
 import SkillCard from './SkillCard'
 import SkillsData from '../data/skillz';

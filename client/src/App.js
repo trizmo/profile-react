@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import Particles from 'react-particles-js';
 
 
 // redux
@@ -21,14 +22,23 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
+        <div
+        //  style={styles.mainStyle}
+         >
           <NavBar />
           <MainContainer />
           <Footer />
+          {/* <Particles /> */}
         </div>
       </Provider>
     );
   }
 }
+
+// const styles = {
+//   mainStyle: {
+//     backgroundColor: "red"
+//   }
+// }
 
 export default App;

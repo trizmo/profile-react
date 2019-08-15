@@ -9,11 +9,11 @@ import {
   NavLink,
   Container
 } from 'reactstrap';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 // REDUX
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 // COMPONENTS
 import Logout from './Logout'
@@ -31,7 +31,7 @@ class NavBar extends Component {
   }
 
   render() {
-    const { isAuthenticated, user } = this.props.auth
+    const { isAuthenticated } = this.props.auth
 
     const authenticated = (
       <Nav navbar className="ml-auto" style={styles.navLinks}>

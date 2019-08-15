@@ -9,11 +9,11 @@ import {
   NavLink,
   Container
 } from 'reactstrap';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 // REDUX
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 
 class DBNavBar extends Component {
@@ -29,7 +29,7 @@ class DBNavBar extends Component {
   }
 
   render() {
-    const { isAuthenticated, user } = this.props.auth
+    // const { isAuthenticated, user } = this.props.auth
 
 
     return (

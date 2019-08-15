@@ -10,7 +10,7 @@ const Footer = () => {
         <Row>
           <Col>
           <Button style={{ textDecoration: "none"}}>
-            <a href="https://github.com/trizmo/" target="_blank" style={{ color: "white", textDecoration: "none" }}>
+            <a href="https://github.com/trizmo/" target="_blank" rel="noopener noreferrer" style={{ color: "white", textDecoration: "none" }}>
               <FaGithub style={{fontSize: "2em"}} /> 
               <span>&nbsp;Github</span>
             </a>
@@ -18,7 +18,7 @@ const Footer = () => {
           </Col>
           <Col>
           <Button style={{ textDecoration: "none"}}>
-            <a href="https://linkedin.com/in/tristan-perera/" target="_blank" style={{ color: "white", textDecoration: "none" }}>
+            <a href="https://linkedin.com/in/tristan-perera/" target="_blank" rel="noopener noreferrer" style={{ color: "white", textDecoration: "none" }}>
               <FaLinkedin style={{fontSize: "2em"}} /> 
               <span>&nbsp;LinkedIn</span>
             </a>
@@ -26,7 +26,7 @@ const Footer = () => {
           </Col>
           <Col>
           <Button style={{ textDecoration: "none"}}>
-            <a href="https://twitter.com/lastskycaptain" target="_blank" style={{ color: "white", textDecoration: "none" }}>
+            <a href="https://twitter.com/lastskycaptain" target="_blank" rel="noopener noreferrer" style={{ color: "white", textDecoration: "none" }}>
               <FaTwitter style={{ fontSize: "2em" }} />
               <span>&nbsp;Twitter</span>
             </a>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Container, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 
 
 import expData from '../data/projects.json';
 import skillData from '../data/skillz.json';
 import MyResume from '../data/resume/resume.pdf'
-import { FaRegIdBadge } from 'react-icons/fa';
+// import { FaRegIdBadge } from 'react-icons/fa';
 
 
 export default class Resume extends Component {

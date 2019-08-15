@@ -10,6 +10,8 @@ import PropTypes from 'prop-types';
 import JobDetails from './AdminPanel/JobDetails/JobDetails'
 import ContactMessages from './AdminPanel/Messages/Messages'
 import Overview from './AdminPanel/Overview/Overview'
+import AddNewJob from './AdminPanel/JobDetails/AddNewJob';
+import AddTimeLog from './AdminPanel/JobDetails/AddTimeLog';
 
 class DashboardWrapper extends Component {
   render() {
@@ -21,6 +23,8 @@ class DashboardWrapper extends Component {
             <Route exact path="/lejonbrames/" component={Overview} />
             <Route exact path="/lejonbrames/messages" component={ContactMessages} />
             <Route exact path="/lejonbrames/jobs" component={JobDetails} />
+            <Route exact path="/lejonbrames/jobs/addnewjob" component={AddNewJob} />
+            <Route path="/lejonbrames/jobs/addtimelog/" component={AddTimeLog} />
           </Switch>
         </BrowserRouter>
       </Container>

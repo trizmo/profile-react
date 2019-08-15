@@ -1,6 +1,6 @@
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap';
-import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { Row, Col } from 'reactstrap';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 
 export default function ContactInfo() {
@@ -17,7 +17,7 @@ export default function ContactInfo() {
       <Row style={styles.socialMedia} className="text-center">
 
         <Col>
-          <a href="https://github.com/trizmo" target="_blank" style={{ textDecoration: "none" }}>
+          <a href="https://github.com/trizmo" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <div style={styles.socialIcon} >
               <FaGithub />
             </div>
@@ -26,7 +26,7 @@ export default function ContactInfo() {
         </Col>
 
         <Col>
-          <a href="https://www.linkedin.com/in/tristan-perera/" target="_blank" style={{ textDecoration: "none" }}>
+          <a href="https://www.linkedin.com/in/tristan-perera/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <div style={styles.socialIcon} >
               <FaLinkedin />
             </div>
@@ -35,7 +35,7 @@ export default function ContactInfo() {
         </Col>
 
         <Col>
-          <a href="https://twitter.com/lastskycaptain" target="_blank" style={{ textDecoration: "none" }}>
+          <a href="https://twitter.com/lastskycaptain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <div style={styles.socialIcon} >
               <FaTwitter />
             </div>

@@ -22,7 +22,7 @@ const JobDetailSchema = new Schema({
   },
   contactPhone: {
     type: String, 
-    required: true
+    required: false
   },
   contactEmail: {
     type: String, 
@@ -30,10 +30,14 @@ const JobDetailSchema = new Schema({
   },
   shortDescription: {
     type: String, 
-    required: true
+    required: false
   },
   longDescription: {
     type: String, 
+    required: false
+  },
+  timeLog: {
+    type: [], 
     required: false
   },
   enterDate: {

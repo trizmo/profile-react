@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 //REDUX
 import { connect } from 'react-redux';
 import { getJobDetails, deleteJobDetail } from '../../../store/actions/jobDetailsActions'
+import AddNewJob from './AddNewJob';
+import TimeLogDetails from './TimeLogDetails'
 
 //COMPONENTS
 
@@ -23,8 +25,9 @@ class jobDetails extends Component {
 
     return (
       <Container>
+        <Button outline color="primary"> <a href="/lejonbrames/jobs/addnewjob" to="/lejonbrames/jobs/addnewjob">Add New Job</a></Button>
         {jobDetails !== undefined ? (
-          jobDetails.map(job => (
+          jobDetails.map(job=> (
             <ListGroup style={styles.wrapper}>
               <TransitionGroup>
                 <CSSTransition>
@@ -35,9 +38,26 @@ class jobDetails extends Component {
                       <p>Description: {<strong>{job.shortDescription}</strong>}</p>
                       <p>Start Date: {<strong>{job.enterDate}</strong>}</p>
                     </div>
-                    <Button onClick={() => this.props.deleteJobDetail(job._id)} style={styles.deleteButton} color="danger">
+                    <Button outline color="success" href={`/lejonbrames/jobs/addtimelog/?${job._id}`} to="/lejonbrames/jobs/addtimelog/?:id" params={job._id}
+                    // onClick={ () => alert("clicked!: " + job._id) }
+                    >
+                      Add Time Log
+                    </Button>
+                    <Button onClick={() => this.props.deleteJobDetail(job._id)} style={styles.deleteButton} outline color="danger">
                       Delete
                     </Button>
+
+                    <TimeLogDetails id={job._id}/>  
+
+
+                    {/* {job.timeLog.length > 0 ? (
+                      job.timeLog.map(log => (
+                      <div>
+                        <p>{log.descriptionOfWork}</p>
+                      </div>
+                      ))
+                    ) : (null)} */}
+
                   </ListGroupItem>
                 </CSSTransition>
               </TransitionGroup>
@@ -62,7 +82,7 @@ const styles = {
 
   },
   deleteButton: {
-
+    margin: 5
   }
 }
 
