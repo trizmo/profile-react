@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 
 
-import expData from '../data/projects.json';
-import skillData from '../data/skillz.json';
-import MyResume from '../data/resume/resume.pdf'
+
+import expData from '../../data/projects.json';
+import skillData from '../../data/skillz.json';
+import MyResume from '../../data/resume/resume.pdf'
 // import { FaRegIdBadge } from 'react-icons/fa';
 
 
@@ -47,8 +48,8 @@ export default class Resume extends Component {
                     </ul>
                   ))}
                   <a href={exp.repoLink}><p>Github Repo</p></a>
-                  {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (null) }
-                  
+                  {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (null)}
+
                 </div>
               ) : (null)
           ))}
@@ -70,7 +71,7 @@ export default class Resume extends Component {
                   </ul>
                 ))}
                 <a href={exp.repoLink}><p>Github Repo</p></a>
-                {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (null) }
+                {exp.liveLink ? (<a href={exp.liveLink} target="_blank"><p>Live Link</p></a>) : (null)}
 
               </div>) : (null)
 
@@ -91,8 +92,8 @@ export default class Resume extends Component {
           ))}
         </Container> */}
 
-        <Button outline size="lg" color="primary" style={{left: 0}} href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
-          Download My Resume
+        <Button outline size="lg" color="primary" style={{ left: 0 }} href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
+          Download Resume
         </Button>
       </div>
 

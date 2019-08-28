@@ -9,9 +9,9 @@ import store from './store/store';
 import { loadUser } from './store/actions/authActions'
 
 import './App.css';
-import NavBar from './components/NavBar';
-import MainContainer  from './components/MainContainer';
-import Footer from './components/Footer'
+import NavBar from './components/MainFront/NavBar';
+import MainContainer from './components/MainFront/MainContainer';
+import Footer from './components/MainFront/Footer'
 
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
       <Provider store={store}>
         <div
         //  style={styles.mainStyle}
-         >
+        >
           <NavBar />
           <MainContainer />
           <Footer />

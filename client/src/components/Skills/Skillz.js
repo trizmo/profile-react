@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 // import { Container } from 'reactstrap';
 
 import SkillCard from './SkillCard'
-import SkillsData from '../data/skillz';
+import SkillsData from '../../data/skillz';
+import MainSkills from './MainSkills';
 
 export default class Skillz extends Component {
 
@@ -17,7 +18,7 @@ export default class Skillz extends Component {
     return (
       <div>
 
-
+        {/* <MainSkills /> */}
 
         <div style={styles.mainText} className="text-center">
           Getting the tools needed to complete the job.

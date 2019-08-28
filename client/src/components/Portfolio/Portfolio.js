@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 // import { Container } from 'reactstrap';
 // import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
-
 import WorkCard from './WorkCard';
-import projectsData from '../data/projects';
+import projectsData from '../../data/projects';
 import { Spring } from 'react-spring/renderprops-universal';
 
 export default class Portfolio extends Component {
@@ -36,7 +35,7 @@ export default class Portfolio extends Component {
           {props => (
             <div style={{ ...styles.mainText, ...props }} className="text-center">
               Building projects for businesses, with friends, or just for fun.
-</div>
+          </div>
           )}
 
 

@@ -8,13 +8,14 @@ import PropTypes from 'prop-types';
 
 // Components
 import AboutMe from './AboutMe';
-import Portfolio from './Portfolio'
-import Skills from './Skillz'
-import Contact from './Contact'
-import Resume from './Resume'
-import Login from './Login'
-import Dashboard from './Dashboard'
+import Portfolio from '../Portfolio/Portfolio'
+import Skills from '../Skills/Skillz'
+import Contact from '../Contact/Contact'
+import Resume from '../Portfolio/Resume'
+import Login from '../MainFront/Login'
+import Dashboard from '../AdminPanel/Dashboard'
 import { callbackify } from 'util';
+import MainSkills from '../Skills/MainSkills';
 
 class MainContainer extends Component {
   render() {
@@ -34,6 +35,7 @@ class MainContainer extends Component {
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/lejonbrames" component={Login} />
+            <Route exact path="/test" component={MainSkills} />
           </Switch>
         </BrowserRouter>
       </div>

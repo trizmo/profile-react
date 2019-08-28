@@ -3,7 +3,7 @@ import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 
 // REDUX
 import { connect } from 'react-redux';
-import { addContactMessage } from '../store/actions/contactMessagesActions';
+import { addContactMessage } from '../../store/actions/contactMessagesActions';
 
 class ContactForm extends Component {
   state = {
@@ -29,7 +29,7 @@ class ContactForm extends Component {
     // replace with simple modal
     alert("message sent")
 
-    this.props.addContactMessage( newMessage);
+    this.props.addContactMessage(newMessage);
     // console.log("message sent!", newMessage)
   }
 
@@ -37,25 +37,25 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.form}>
         <Form onSubmit={this.onSubmit}>
-        <FormGroup>
-          <Label for="contactEmail">Email</Label>
-          <Input type="email" name="email" id="contactEmail" placeholder="Enter Your Email..." onChange={this.onChange}/>
-        </FormGroup>
+          <FormGroup>
+            <Label for="contactEmail">Email</Label>
+            <Input type="email" name="email" id="contactEmail" placeholder="Enter Your Email..." onChange={this.onChange} />
+          </FormGroup>
 
-        <FormGroup>
-          <Label for="contactName">Name</Label>
-          <Input type="text" name="name" id="contactName" placeholder="Enter Your Name..." onChange={this.onChange}/>
-        </FormGroup>
+          <FormGroup>
+            <Label for="contactName">Name</Label>
+            <Input type="text" name="name" id="contactName" placeholder="Enter Your Name..." onChange={this.onChange} />
+          </FormGroup>
 
-        <FormGroup>
-          <Label for="contactMessage">Message</Label>
-          <Input type="textarea" name="message" id="contactMessage" onChange={this.onChange}/>
-        </FormGroup>
+          <FormGroup>
+            <Label for="contactMessage">Message</Label>
+            <Input type="textarea" name="message" id="contactMessage" onChange={this.onChange} />
+          </FormGroup>
 
-        <Button>Submit</Button>
-      </Form>
+          <Button>Submit</Button>
+        </Form>
       </div>
     )
   }
@@ -65,5 +65,14 @@ const mapStateToProps = state => ({
   auth: state.auth,
   contactMessage: state.contactMessage
 })
+
+
+const styles = {
+  form: {
+    width: "100%",
+    // display: "flex",
+    flexBasis: "50%",
+  }
+}
 
 export default connect(mapStateToProps, { addContactMessage })(ContactForm)

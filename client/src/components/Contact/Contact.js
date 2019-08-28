@@ -13,9 +13,9 @@ export default class Contact extends Component {
           Let's see what we can build together!
         </div>
 
-        <div styles={contactStyles.mainContainer}>
-          <ContactInfo />
-          <ContactForm />
+        <div style={contactStyles.mainContainer}>
+          <ContactInfo style={contactStyles.item}/>
+          <ContactForm style={contactStyles.item}/>
         </div>
 
 
@@ -38,8 +38,16 @@ const contactStyles = {
   mainContainer: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "flex-end",
-    flex: "1 0 48%",
+    justifyContent: "space-evenly",
+    // flex: "1 0 48%",
     // flexWrap: "nowarap"
+  },
+  item: {
+    display: "flex",
+    flexBasis: "50%",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+    // fontSize: "1.75rem",
+  //   fontWeight: "600"
   },
 }

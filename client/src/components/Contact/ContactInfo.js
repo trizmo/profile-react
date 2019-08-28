@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function ContactInfo() {
   return (
-    <div>
+    <div  style={styles.info}>
       <div style={styles.email} className="text-center">
         tristan.e.perera@gmail.com
       </div>
@@ -63,5 +63,10 @@ const styles = {
   socialIcon: {
     textDecoration: "none",
     fontSize: "2.5em"
+  },
+  info: {
+    width: "100%",
+    // display: "flex",
+    flexBasis: "50%",
   }
 }

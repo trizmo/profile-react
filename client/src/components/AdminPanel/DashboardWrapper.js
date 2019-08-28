@@ -7,17 +7,17 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 // Components
-import JobDetails from './AdminPanel/JobDetails/JobDetails'
-import ContactMessages from './AdminPanel/Messages/Messages'
-import Overview from './AdminPanel/Overview/Overview'
-import AddNewJob from './AdminPanel/JobDetails/AddNewJob';
-import AddTimeLog from './AdminPanel/JobDetails/AddTimeLog';
+import JobDetails from './JobDetails/JobDetails'
+import ContactMessages from './Messages/Messages'
+import Overview from './Overview/Overview'
+import AddNewJob from './JobDetails/AddNewJob';
+import AddTimeLog from './JobDetails/AddTimeLog';
 
 class DashboardWrapper extends Component {
   render() {
     const { isAuthenticated, user } = this.props.auth
     return (
-      <Container style={styles.mainContainer}>
+      <Container style={styles.mainContainer} className="DashboardWrapper-main-div">
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/lejonbrames/" component={Overview} />

@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Spring } from 'react-spring/renderprops';
 
-import MyResume from '../data/resume/resume.pdf'
-import profilPic from '../assets/profile1.png'
-import Resume from './Resume'
-import Contact from './Contact';
-import Skillz from './Skillz';
-import Portfolio from './Portfolio';
+import MyResume from '../../data/resume/resume.pdf'
+import profilPic from '../../assets/profile1.png'
+import Resume from '../Portfolio/Resume'
+import Contact from '../Contact/Contact';
+import Skillz from '../Skills/Skillz';
+import Portfolio from '../Portfolio/Portfolio';
 
 // const profilPic = "../assets/profile-tristan2.jpg"
 
@@ -37,15 +37,11 @@ export default class AboutMe extends Component {
 
         <Container className="text-center">
           <Row>
-
             <Col style={styles.mainSection}>
-
               <Spring
                 from={{
-
                   textShadow: '0px 0px 0px black',
                   fontSize: "1.5rem"
-
                 }}
                 to={{
                   textShadow: '1px 1px 3px black',
@@ -58,10 +54,6 @@ export default class AboutMe extends Component {
                   </div>
                 }
               </Spring>
-              {/* <div style={styles.mainName}>
-                Tristan Perera
-              </div> */}
-
               <Spring
                 delay={125}
                 from={{
@@ -79,11 +71,6 @@ export default class AboutMe extends Component {
                       </div>
                 }
               </Spring>
-
-              {/* <div style={styles.mainTitle}>
-                Software Engineer
-              </div> */}
-
               <Spring
                 delay={250}
                 from={{
@@ -94,18 +81,15 @@ export default class AboutMe extends Component {
                 }}
               >
                 {props =>
-
                   <div style={props}>
                     A passionate developer and a quick learner with experience in mobile development, Internet of Things, and in back-end and front-end web development.
                     I am always looking to better myself and learn new things. Consistently growing, I bring a high quality value to any team by bringing positive energy, exceptional problem solving skills, and high Self-Efficacy.
-              </div>
-                }
+                  </div>}
               </Spring>
 
               <Button outline size="lg" color="primary" href={this.state.resume} download="Tristan Perera - Software Engineer.pdf">
                 Download My Resume
               </Button>
-
             </Col>
 
             <Col style={
@@ -125,7 +109,7 @@ export default class AboutMe extends Component {
                 }}
               >
                 {props =>
-                  <div style={{ ...styles.profilepic, ...props}}>
+                  <div style={{ ...styles.profilepic, ...props }}>
                     {this.returnProfilePic()}
                   </div>
                 }

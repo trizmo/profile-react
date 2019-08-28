@@ -5,11 +5,12 @@ import {
   FormGroup,
   Label,
   Input,
+  Container,
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { login } from '../store/actions/authActions'
-import { clearErrors } from '../store/actions/errorActions'
+import { login } from '../../store/actions/authActions'
+import { clearErrors } from '../../store/actions/errorActions'
 
 class LoginModal extends Component {
   state = {
@@ -74,7 +75,8 @@ class LoginModal extends Component {
 
   render() {
     return (
-      <div style={styles.loginDiv}>
+      <Container style={styles.mainContainer}>
+      <div style={styles.loginDiv} className="mainLoginDiv">
         {/* <NavLink onClick={this.toggle}  href="#">
           Login
         </NavLink> */}
@@ -84,9 +86,9 @@ class LoginModal extends Component {
         {/* <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}
-        >
+          >
           <ModalHeader toggle={this.toggle}> Login </ModalHeader>
-          <ModalBody> */}
+        <ModalBody> */}
         <Form onSubmit={this.onSubmit}>
           <FormGroup>
 
@@ -99,7 +101,7 @@ class LoginModal extends Component {
               placeholder="Enter Email"
               onChange={this.onChange}
               className="mb-3"
-            />
+              />
 
             <Label for="Password">Password</Label>
             <Input
@@ -109,13 +111,13 @@ class LoginModal extends Component {
               placeholder="Enter Password"
               onChange={this.onChange}
               className="mb-3"
-            />
+              />
 
             <Button
               color="dark"
               style={{ marginTop: "2rem" }}
               block
-            >
+              >
               Login
                 </Button>
 
@@ -126,6 +128,7 @@ class LoginModal extends Component {
         </Modal> */}
 
       </div>
+        </Container>
     )
 
   }
@@ -136,8 +139,18 @@ const styles = {
   errorMSG: {
     color: "red",
   },
+  mainContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
+  },
   loginDiv: {
-    maxWidth: "300px"
+    width: "600px",
+    // display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
   }
 }
 
