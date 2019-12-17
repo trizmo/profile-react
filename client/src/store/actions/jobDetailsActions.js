@@ -16,7 +16,22 @@ export const getJobDetails = () => (dispatch, getState) => {
     )
     // .then(res => console.log(res))
     .catch(err => dispatch(returnErrors(err.response.data, err.response.status)))
-  
+
+}
+
+export const getSpecificJob = (id) => (dispatch, getState) => {
+  console.log("getting job: ", id)
+  axios
+    .get(`/api/jobdetail/${id}`, tokenConfig(getState))
+    .then(res =>
+      dispatch({
+        type: GET_JOBDETAILS,
+        payload: res.data,
+      })
+    )
+    .catch(err => dispatch(returnErrors(err.response.data, err.response.status)))
+
+
 }
 
 

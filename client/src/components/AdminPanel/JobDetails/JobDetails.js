@@ -27,13 +27,13 @@ class jobDetails extends Component {
       <Container>
         <Button outline color="primary"> <a href="/lejonbrames/jobs/addnewjob" to="/lejonbrames/jobs/addnewjob">Add New Job</a></Button>
         {jobDetails !== undefined ? (
-          jobDetails.map(job=> (
+          jobDetails.map(job => (
             <ListGroup style={styles.wrapper}>
               <TransitionGroup>
                 <CSSTransition>
                   <ListGroupItem style={styles.messageContainer}>
                     <div style={styles.message}>
-                      <p>Job name: {<strong>{job.jobName}</strong>}</p>
+                      <p>Job name: {<strong><a href={`/lejonbrames/jobs/detail/${job._id}`}>{job.jobName}</a></strong>}</p>
                       <p>Client: {<strong>{job.clientName}</strong>}</p>
                       <p>Description: {<strong>{job.shortDescription}</strong>}</p>
                       <p>Start Date: {<strong>{job.enterDate}</strong>}</p>
@@ -47,7 +47,7 @@ class jobDetails extends Component {
                       Delete
                     </Button>
 
-                    <TimeLogDetails id={job._id}/>  
+                    <TimeLogDetails id={job._id} />
 
 
                     {/* {job.timeLog.length > 0 ? (

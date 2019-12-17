@@ -33,7 +33,7 @@ const options = {
 
 const dbConnection = () => {
   mongoose.connect(url, options)
-    .then(() => console.log("===== Connected to mongoDB =)"))
+    .then(() => console.log("Connected to mongoDB"))
     .catch(err => {
       console.log("*ERROR: ", err)
       setTimeout(() => {

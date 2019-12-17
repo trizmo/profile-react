@@ -12,6 +12,7 @@ import ContactMessages from './Messages/Messages'
 import Overview from './Overview/Overview'
 import AddNewJob from './JobDetails/AddNewJob';
 import AddTimeLog from './JobDetails/AddTimeLog';
+import JobDetailPage from './JobDetails/JobDetailPage'
 
 class DashboardWrapper extends Component {
   render() {
@@ -23,6 +24,7 @@ class DashboardWrapper extends Component {
             <Route exact path="/lejonbrames/" component={Overview} />
             <Route exact path="/lejonbrames/messages" component={ContactMessages} />
             <Route exact path="/lejonbrames/jobs" component={JobDetails} />
+            <Route path="/lejonbrames/jobs/detail/" component={JobDetailPage} />
             <Route exact path="/lejonbrames/jobs/addnewjob" component={AddNewJob} />
             <Route path="/lejonbrames/jobs/addtimelog/" component={AddTimeLog} />
           </Switch>

@@ -1,0 +1,119 @@
+/*===================================*/
+
+/*##   Job Information*/
+
+/*===================================*/
+
+.jobDetail1 {
+  display: flex;
+  justify-content: space-between
+}
+
+.jobDetail1-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobDetail1-info span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.jobDetail1-functions {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobDetail1-functions-upper {
+  display: flex;
+  flex-direction: row;
+}
+
+.jobDetail1-functions-lower {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobDetail1-functions-upper span {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.jobDetail2 {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.jobDetail2-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.jobDetail2 span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.jobDetail3 {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.jobDetail3 span {
+  padding: 2px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*===================================*/
+
+/*##   TAB NAVIGATION*/
+
+/*===================================*/
+
+.tabNav {
+  border-top: 1px solid grey
+}
+
+.tabNavLinks {
+  display: flex;
+  border-bottom: 1px solid grey
+}
+
+.tabNavLink {
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+.tabNav-timeLog {}
+
+.tabNav-timeLog-detail {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+}
+
+.tabNav-timeLog-detail span {
+  padding: 2px;
+  font-size: 1.25rem;
+}
+
+.tabNav-timeLog-detail-invoiced {
+  color: green;
+  font-weight: 700;
+}
+
+.tabNav-timeLog-detail-notInvoiced {
+  color: red;
+  font-weight: 700;
+}
