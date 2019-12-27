@@ -58,7 +58,8 @@ router.patch("/:id", auth, (req, res) => {
     date: req.body.date,
     numberOfHours: req.body.numberOfHours,
     descriptionOfWork: req.body.descriptionOfWork,
-    invoiced: false
+    invoiced: false,
+    paid: false,
   }
   const id = req.params.id
   // console.log(newTimeLog, id)

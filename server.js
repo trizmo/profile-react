@@ -41,6 +41,7 @@ const dbConnection = () => {
       }, 2500);
     })
 }
+
 dbConnection()
 
 
@@ -50,6 +51,7 @@ app.use('/api/users', require('./routes/api/users'))
 app.use('/api/auth', require('./routes/api/auth'))
 app.use('/api/jobdetail', require('./routes/api/jobDetail'))
 app.use('/api/timelog', require('./routes/api/timeLog'))
+app.use('/api/admin/invoice', require('./routes/api/admin/mailInvoice'))
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {

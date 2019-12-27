@@ -20,6 +20,9 @@ export const ADD_JOBDETAIL = 'ADD_JOBDETAIL';
 export const DELETE_JOBDETAIL = 'DELETE_JOBDETAIL';
 export const JOBDETAILS_LOADING = 'JOBDETAILS_LOADING';
 
+// ADMIN 
+export const MAIL_SENT = 'MAIL_SENT';
+
 // ERRORS
 export const GET_ERRORS = 'GET_ERRORS';
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';

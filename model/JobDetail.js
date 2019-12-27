@@ -5,44 +5,44 @@ const Schema = mongoose.Schema;
 // SCHEMA
 const JobDetailSchema = new Schema({
   jobNumber: {
-    type: Number, 
+    type: Number,
     required: true
   },
   jobName: {
-    type: String, 
+    type: String,
     required: true
   },
   clientName: {
-    type: String, 
+    type: String,
     required: true
   },
   contactName: {
-    type: String, 
+    type: String,
     required: true
   },
   contactPhone: {
-    type: String, 
+    type: String,
     required: false
   },
   contactEmail: {
-    type: String, 
+    type: String,
     required: true
   },
   shortDescription: {
-    type: String, 
+    type: String,
     required: false
   },
   longDescription: {
-    type: String, 
+    type: String,
     required: false
   },
   timeLog: {
-    type: [], 
+    type: [],
     required: false
   },
   enterDate: {
     type: Date,
-    default: Date.now, 
+    default: Date.now,
   },
 
 })

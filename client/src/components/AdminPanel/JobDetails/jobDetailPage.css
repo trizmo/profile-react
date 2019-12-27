@@ -108,6 +108,10 @@
   font-size: 1.25rem;
 }
 
+.tabNav-timeLog-detail Button {
+  width: 75px;
+}
+
 .tabNav-timeLog-detail-invoiced {
   color: green;
   font-weight: 700;

@@ -4,9 +4,12 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addTimeLog } from '../../../store/actions/jobDetailsActions'
 
+// CSS
+import './addTimeLog.css'
+
 
 class AddTimeLog extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       date: "",
@@ -15,7 +18,7 @@ class AddTimeLog extends Component {
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
     // console.log(this.props.location.search)
     let jobId = this.props.location.search
     jobId = jobId.slice(1, jobId.length)
@@ -37,7 +40,9 @@ class AddTimeLog extends Component {
     const newTimeLog = {
       date: this.state.date,
       numberOfHours: this.state.numberOfHours,
-      descriptionOfWork: this.state.descriptionOfWork
+      descriptionOfWork: this.state.descriptionOfWork,
+      invoiced: false,
+      paid: false,
     }
 
     // replace with simple modal
@@ -64,7 +69,7 @@ class AddTimeLog extends Component {
 
             <Label for="numberOfHours">Number of Hours</Label>
             <Input type="numberOfHours" name="numberOfHours" id="starnumberOfHourstTime" placeholder="numberOfHours" onChange={this.onChange} />
-            
+
             <Label for="descriptionOfWork">Description of Work</Label>
             <Input type="descriptionOfWork" name="descriptionOfWork" id="descriptionOfWork" placeholder="descriptionOfWork" onChange={this.onChange} />
           </FormGroup>
